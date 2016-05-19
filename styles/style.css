@@ -622,22 +622,29 @@ a:hover {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;
 }
 
-.form {
-  margin-top: 40px;
-}
-
-form.col-lg-4 {
+form{
   padding-top: 30px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-top: 50px;
+  margin: 100px auto;
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 200px;
   font-family: "Raleway";
+  height: 590px;
+  width: 90%;
 }
 
+label{
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 780px) {
+  form{
+    height: 650px;
+  }
+}
 
 /** Custom Select **/
 
@@ -808,4 +815,5 @@ button {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   font-family: "Bebas";
+  font-size: 30px;
 }
