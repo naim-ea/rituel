@@ -26,6 +26,14 @@ body {
   z-index: 1000;
 }
 
+/*      FOOTER     */
+#footer{
+  width: 100%;
+  background: #1D1D1D;
+  height: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 
 /* HEADER HAMBURGER*/
 
@@ -361,6 +369,14 @@ a:hover {
 
 /* 3EME SECTION */
 
+#artiste {
+  height: 600px;
+  width: 100%;
+  background: #F0F0F0;
+  position: relative;
+  z-index: 100;
+}
+
 #artiste .transition {
   margin-top: -50px;
 }
@@ -385,20 +401,9 @@ a:hover {
   margin: auto;
 }
 
-#artiste {
-  height: 600px;
-  width: 100%;
-  background: #F0F0F0;
-  position: relative;
-  z-index: 100;
+#artiste h3{
+  
 }
-
-
-/*
-/*  ////////////       CONTACT       //////////// */
-
-
-/*
 
 
 /*==================================================
@@ -614,8 +619,8 @@ a:hover {
 @media only screen and (max-width: 320px) {}
 
 
-/*
 /*  ////////////       CONTACT       //////////// */
+
 
 #bodyContact {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;
