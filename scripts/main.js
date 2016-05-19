@@ -13,7 +13,7 @@ $(document).ready(function () {
       $(".mobilenav").fadeToggle(500);
       $(".top-menu").toggleClass("top-animate");
       $(".mid-menu").toggleClass("mid-animate");
-      $(".bottom-menu").toggleClass("bottom-animate");
+      $(".bottom-menu").toggleClass("bottom-animate"); $('#header').toggleClass('backgroundDark');
     });
   });
 
@@ -22,8 +22,8 @@ $(document).ready(function () {
   //SELECT CUSTOMISÉ SUR LA PAGE CONTACT
   $(".custom-select").each(function () {
     var classes = $(this).attr("class"),
-      id = $(this).attr("id"),
-      name = $(this).attr("name");
+        id = $(this).attr("id"),
+        name = $(this).attr("name");
     var template = '<div class="' + classes + '">';
     template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
     template += '<div class="custom-options">';
@@ -54,5 +54,15 @@ $(document).ready(function () {
     $(this).addClass("selection");
     $(this).parents(".custom-select").removeClass("opened");
     $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+  });
+  
+
+  $(document).scroll(function () {
+    if ($(document).scrollTop() > 450){
+      $('#header').addClass('backgroundDark');
+    }
+    else if ($(document).scrollTop() < 450){
+      $('#header').removeClass('backgroundDark');
+    }
   });
 });
