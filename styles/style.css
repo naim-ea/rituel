@@ -58,6 +58,7 @@ body {
 .icon {
   margin-top: 5px;
   margin-left: 5px;
+  position: absolute;
 }
 
 
@@ -383,6 +384,225 @@ a:hover {
 /*
 /*  ////////////       CONTACT       //////////// */
 
+
+/*
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+  #entete {
+    height: 400px;
+  }
+  #entete h2 {
+    font-size: 150px;
+    margin-top: 0;
+    padding-top: 100px;
+  }
+  #entete p {
+    font-size: 20px;
+  }
+  #entete p {
+    margin-top: 50px;
+  }
+  #nextEvent {
+    height: 1100px;
+  }
+  .nextEventBackground {
+    height: 1100px;
+  }
+  #nextEvent .transition {
+    margin-top: -50px;
+  }
+  #nextEvent .transition h2 {
+    height: 100px;
+    line-height: 120px;
+    font-size: 45px;
+  }
+  #nextEvent .describe h3 {
+    font-size: 150px;
+  }
+  #nextEvent .describe .col-md-8:last-child {
+    margin-top: 300px;
+  }
+  #nextEvent .describe .col-md-8 h4 {
+    font-size: 40px;
+  }
+  #nextEvent .lineUp {
+    margin-top: 50px;
+  }
+  #nextEvent .lineUp h3 {
+    padding-top: 15px;
+  }
+  #nextEvent .lineUp ul li {
+    height: 70px;
+    line-height: 70px;
+  }
+  #nextEvent .lineUp p {
+    padding-top: 35px;
+  }
+  #artiste {
+    margin-top: 100px;
+  }
+  #artiste .transition {
+    margin-top: -130px;
+    transform: translateY(-20px) skewY(2deg);
+  }
+  #artiste .transition p {
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  #artiste .transition #barre {
+    padding: 0;
+    margin: 100px auto;
+  }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  #entete {
+    height: 400px;
+  }
+  #entete h2 {
+    font-size: 75px;
+    margin-top: 0;
+    padding-top: 100px;
+  }
+  #entete p {
+    margin-top: 50px;
+  }
+  #nextEvent {
+    height: 1100px;
+  }
+  .nextEventBackground {
+    height: 1100px;
+  }
+  #nextEvent .transition {
+    margin-top: -50px;
+  }
+  #nextEvent .transition h2 {
+    height: 100px;
+    line-height: 100px;
+  }
+  #nextEvent .describe h3 {
+    font-size: 100px;
+  }
+  #nextEvent .describe .col-md-8:last-child {
+    margin-top: 300px;
+  }
+  #nextEvent .describe .col-md-8 h4 {
+    font-size: 30px;
+  }
+  #nextEvent .lineUp h3 {
+    padding-top: 15px;
+  }
+  #nextEvent .lineUp ul li {
+    height: 70px;
+    line-height: 70px;
+  }
+  #nextEvent .lineUp p {
+    padding-top: 35px;
+  }
+  #artiste {
+    margin-top: 100px;
+  }
+  #artiste .transition {
+    margin-top: -130px;
+    transform: translateY(-20px) skewY(2deg);
+  }
+  #artiste .transition p {
+    padding-top: 20px;
+  }
+  #artiste .transition #barre {
+    margin-top: 50px;
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+  #entete {
+    height: 400px;
+  }
+  #entete h2 {
+    font-size: 75px;
+    margin-top: 0;
+    padding-top: 100px;
+  }
+  #entete p {
+    margin-top: 50px;
+  }
+  #nextEvent {
+    height: 1100px;
+  }
+  .nextEventBackground {
+    height: 1100px;
+  }
+  #nextEvent .transition {
+    margin-top: -50px;
+  }
+  #nextEvent .transition h2 {
+    height: 100px;
+    line-height: 100px;
+  }
+  #nextEvent .describe h3 {
+    font-size: 100px;
+  }
+  #nextEvent .describe .col-md-8:last-child {
+    margin-top: 300px;
+  }
+  #nextEvent .describe .col-md-8 h4 {
+    font-size: 30px;
+  }
+  #nextEvent .lineUp h3 {
+    padding-top: 15px;
+  }
+  #nextEvent .lineUp ul li {
+    height: 70px;
+    line-height: 70px;
+  }
+  #nextEvent .lineUp p {
+    padding-top: 35px;
+  }
+  #artiste {
+    margin-top: 100px;
+  }
+  #artiste .transition {
+    margin-top: -130px;
+    transform: translateY(-20px) skewY(2deg);
+  }
+  #artiste .transition p {
+    padding-top: 20px;
+  }
+  #artiste .transition #barre {
+    margin-top: 50px;
+  }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+/*
+/*  ////////////       CONTACT       //////////// */
 
 .form {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;

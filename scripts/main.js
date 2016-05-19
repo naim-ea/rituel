@@ -1,13 +1,25 @@
 $(document).ready(function () {
-  
+
   //HAMBURGER
   $('#headerMobile').hide();
   $('.icon').on('click', function () {
     $('#headerMobile').slideToggle();
   });
 
+  // HAMBURGLERv2
 
-//SELECT CUSTOMISÉ SUR LA PAGE CONTACT
+  $(document).ready(function () {
+    $(".icon").click(function () {
+      $(".mobilenav").fadeToggle(500);
+      $(".top-menu").toggleClass("top-animate");
+      $(".mid-menu").toggleClass("mid-animate");
+      $(".bottom-menu").toggleClass("bottom-animate");
+    });
+  });
+
+
+
+  //SELECT CUSTOMISÉ SUR LA PAGE CONTACT
   $(".custom-select").each(function () {
     var classes = $(this).attr("class"),
       id = $(this).attr("id"),
