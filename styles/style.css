@@ -20,11 +20,12 @@ body {
   overflow-x: hidden;
 }
 
-.topBar{
+.topBar {
   position: fixed;
   width: 100%;
   z-index: 1000;
 }
+
 
 /* HEADER HAMBURGER*/
 
@@ -79,7 +80,7 @@ body {
   transition: all 0.3s linear;
 }
 
-.backgroundDark{
+.backgroundDark {
   background: #1D1D1D;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -165,6 +166,7 @@ a:hover {
   z-index: 100;
   position: relative;
   z-index: 100;
+  padding-top: 40px;
 }
 
 #entete h2 {
@@ -181,6 +183,7 @@ a:hover {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-weight: 300;
   z-index: 100;
+  background: #4a4A4A;
 }
 
 #entete p {
@@ -611,15 +614,14 @@ a:hover {
 @media only screen and (max-width: 320px) {}
 
 
-
 /*
 /*  ////////////       CONTACT       //////////// */
 
-#bodyContact{
+#bodyContact {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;
 }
 
-.form{
+.form {
   margin-top: 40px;
 }
 
@@ -632,6 +634,7 @@ form.col-lg-4 {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 200px;
+  font-family: "Raleway";
 }
 
 
@@ -785,11 +788,13 @@ textarea {
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: white;
+  font-family: "Raleway";
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: white;
+  font-family: "Raleway";
 }
 
 button {
@@ -801,4 +806,5 @@ button {
   margin-top: 35px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  font-family: "Bebas";
 }
