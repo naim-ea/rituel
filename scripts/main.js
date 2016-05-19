@@ -55,7 +55,7 @@ $(document).ready(function () {
     $(this).parents(".custom-select").removeClass("opened");
     $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
   });
-  
+
 
   $(document).scroll(function () {
     if ($(document).scrollTop() > 450){
@@ -64,5 +64,15 @@ $(document).ready(function () {
     else if ($(document).scrollTop() < 450){
       $('#header').removeClass('backgroundDark');
     }
+  });
+
+  $('#artisteButton').on('mouseenter', function(){
+    $('.artisteBackground').removeClass('backgroundActive');
+    $('.artistesImg').addClass('ImgActive');
+  });
+  
+  $('#artisteButton').on('mouseleave', function(){
+    $('.artisteBackground').addClass('backgroundActive');
+    $('.artistesImg').removeClass('ImgActive');
   });
 });

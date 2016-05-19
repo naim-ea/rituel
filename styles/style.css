@@ -29,9 +29,41 @@ body {
 /*      FOOTER     */
 #footer{
   width: 100%;
-  background: #1D1D1D;
   height: 200px;
+  background: #1D1D1D;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+}
+
+#footer ul{
+  margin: auto;
+  width: 290px;
+  margin-top: 10px;
+}
+
+#footer ul li{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  color: #F0F0F0;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+#footer ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#footer .condition-general{
+  text-align: center;
+  margin-top: 80px;
 }
 
 
@@ -252,7 +284,7 @@ a:hover {
 }
 
 #nextEvent .col-md-4 {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   height: 669px;
   z-index: 1;
 }
@@ -370,15 +402,23 @@ a:hover {
 /* 3EME SECTION */
 
 #artiste {
-  height: 600px;
+  height: 750px;
   width: 100%;
-  background: #F0F0F0;
   position: relative;
   z-index: 100;
 }
 
+#camarchepas{
+  height: 750px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
 #artiste .transition {
   margin-top: -50px;
+  z-index: 1000;
 }
 
 #artiste .transition p {
@@ -393,6 +433,29 @@ a:hover {
   font-weight: normal;
 }
 
+#artiste .artistesImg{
+  width: 100%;
+  height: 760px;
+  padding: 0;
+  margin-top: -25px;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+
+.ImgActive{
+  transform: scale(1.1);
+}
+
+.artisteBackground{
+  position: absolute;
+  height: 900px;
+  transition: all 0.4s linear;
+}
+
+.backgroundActive{
+  background: rgba(0,0,0,0.7);
+}
+
 #artiste .transition #barre {
   height: 2px;
   width: 200px;
@@ -401,9 +464,30 @@ a:hover {
   margin: auto;
 }
 
-#artiste h3{
-  
+#artiste img{
+  width: 33.33%;
+  height: auto;
+  padding: 0;
+  margin: -4px;
 }
+
+#artiste .col-md-4{
+  padding: 0;
+}
+
+#artiste h3{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  margin-top: 60%;
+  color: #F0F0F0;
+  text-align: center;
+  border: 2px solid #F0F0F0;
+  padding: 40px 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+}
+
 
 
 /*==================================================
