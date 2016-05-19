@@ -1,0 +1,29 @@
+//topbar blanche
+  $(document).scroll(function () {
+    if (($(document).scrollTop() < 200) && ($("#hamburger").hasClass("burgerOpen"))) {
+      $("#topBar").removeClass("whiteReverse").addClass("white");
+    } else if ($(document).scrollTop() < 200) {
+      $("#topBar").removeClass("white").addClass("whiteReverse"),
+        $("#menu").children("ul").children("li").children("a").css("color", "#fff"),
+        $("#logo").attr('src', 'images/logo.png'),
+        $("#menu ul li a").hover(function () {
+            $(this).css("color", '#333');
+          },
+          function () {
+            $(this).css("color", '#fff');
+          });
+      $("#hamburger").attr('src', 'images/three.png');
+    } else {
+      $("#topBar").removeClass("whiteReverse").addClass("white"),
+        $("#menu").children("ul").children("li").children("a").css("color", "#333"),
+        $("#logo").attr('src', 'images/logo2.png'),
+        $("#menu ul li a").hover(function () {
+            $(this).css("color", '#fff');
+          },
+          function () {
+            $(this).css("color", '#333');
+          });
+      $("#hamburger").attr('src', 'images/three2.png');
+
+    }
+  });
