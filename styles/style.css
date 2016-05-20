@@ -725,6 +725,11 @@ a:hover {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;
 }
 
+#bodyContact #header{
+  background: #1D1D1D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 form{
   padding-top: 30px;
   background-color: white;
