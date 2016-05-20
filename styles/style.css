@@ -26,6 +26,7 @@ body {
   z-index: 1000;
 }
 
+<<<<<<< HEAD
 /*      FOOTER     */
 #footer{
   width: 100%;
@@ -78,6 +79,8 @@ body {
   border-top: 1px solid #F0F0F0;
   color: rgba(255,255,255,0.4);
 }
+=======
+>>>>>>> origin/master
 
 
 /* HEADER HAMBURGER*/
@@ -103,6 +106,8 @@ body {
   font-family: 'bebas', sans-serif;
   font-size: 30px;
 }
+
+
 
 #headerMobile #menu ul li a {
   width: 50%;
@@ -179,6 +184,19 @@ a:hover {
   text-align: center;
   font-family: 'Bebas';
   font-size: 18px;
+}
+
+#header #menu li .underline {
+  height: 2px;
+  width: 0;
+  transition: .3s;
+  background: white;
+}
+
+#header #menu li:hover .underline {
+  background: white;
+  width: 100%;
+  transition: .3s;
 }
 
 #header #menu li a {
@@ -724,6 +742,11 @@ a:hover {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;
 }
 
+#bodyContact header {
+  background: #1D1D1D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 form{
   padding-top: 30px;
   background-color: white;
@@ -922,7 +945,8 @@ button {
 
 /*  ////////////       CONTACT       //////////// */
 
-/*    Artistes   */
+
+/*  ////////////      ARTISTES     //////////// */
 
 #bodyArtistes{
   background: #eeedf3;
@@ -1010,8 +1034,49 @@ button {
   font-family: 'Raleway', sans-serif;
 }
 
+/*  ////////////      ARTISTES     //////////// */
 
+/*  ////////////      FOOTER     //////////// */
+#footer{
+  width: 100%;
+  height: 200px;
+  background: #1D1D1D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+}
 
+#footer ul{
+  margin: auto;
+  width: 290px;
+  margin-top: 40px;
+}
+
+#footer ul li{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  color: #F0F0F0;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+#footer ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#footer .condition-general{
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*  ////////////      FOOTER     //////////// */
 
 
 
