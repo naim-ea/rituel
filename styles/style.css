@@ -26,45 +26,7 @@ body {
   z-index: 1000;
 }
 
-/*      FOOTER     */
-#footer{
-  width: 100%;
-  height: 200px;
-  background: #1D1D1D;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  position: relative;
-}
 
-#footer ul{
-  margin: auto;
-  width: 290px;
-  margin-top: 40px;
-}
-
-#footer ul li{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 35px;
-  color: #F0F0F0;
-  font-size: 20px;
-  text-align: center;
-  border: 1px solid #F0F0F0;
-  border-radius: 50%;
-  margin: 15px;
-}
-
-#footer ul li a{
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-#footer .condition-general{
-  text-align: center;
-  margin-top: 50px;
-}
 
 
 /* HEADER HAMBURGER*/
@@ -166,6 +128,19 @@ a:hover {
   text-align: center;
   font-family: 'Bebas';
   font-size: 18px;
+}
+
+#header #menu li .underline {
+  height: 2px;
+  width: 0;
+  transition: .3s;
+  background: white;
+}
+
+#header #menu li:hover .underline {
+  background: white;
+  width: 100%;
+  transition: .3s;
 }
 
 #header #menu li a {
@@ -408,7 +383,7 @@ a:hover {
   z-index: 100;
 }
 
-#owerflowHidden{
+#owerflowHidden {
   height: 750px;
   width: 100%;
   position: absolute;
@@ -433,7 +408,7 @@ a:hover {
   font-weight: normal;
 }
 
-#artisteHome .artistesImg{
+#artisteHome .artistesImg {
   width: 100%;
   height: 760px;
   padding: 0;
@@ -442,18 +417,18 @@ a:hover {
   transition: all 0.5s linear;
 }
 
-.ImgActive{
+.ImgActive {
   transform: scale(1.1);
 }
 
-.artisteBackground{
+.artisteBackground {
   position: absolute;
   height: 900px;
   transition: all 0.4s linear;
 }
 
-.backgroundActive{
-  background: rgba(0,0,0,0.7);
+.backgroundActive {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 #artisteHome .transition #barre {
@@ -464,7 +439,7 @@ a:hover {
   margin: auto;
 }
 
-#artisteHome img{
+#artisteHome img {
   width: 33.33%;
   width: calc(100% / 3);
   height: auto;
@@ -472,11 +447,11 @@ a:hover {
   margin: -2px;
 }
 
-#artisteHome .col-md-4{
+#artisteHome .col-md-4 {
   padding: 0;
 }
 
-#artisteHome h3{
+#artisteHome h3 {
   position: absolute;
   z-index: 1000;
   width: 100%;
@@ -488,7 +463,6 @@ a:hover {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 40px;
 }
-
 
 
 /*==================================================
@@ -706,34 +680,38 @@ a:hover {
 
 /*  ////////////       CONTACT       //////////// */
 
-
 #bodyContact {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100%;
 }
 
-form{
+#bodyContact header {
+  background: #1D1D1D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form {
   padding-top: 30px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin: 100px auto;
+  margin: 120px auto 120px auto;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 200px;
   font-family: "Raleway";
   height: 590px;
   width: 90%;
 }
 
-label{
+label {
   font-size: 20px;
 }
 
 @media only screen and (max-width: 780px) {
-  form{
+  form {
     height: 650px;
   }
 }
+
 
 /** Custom Select **/
 
@@ -907,52 +885,54 @@ button {
   font-size: 30px;
 }
 
+
 /*  ////////////       CONTACT       //////////// */
 
-/*    Artistes   */
 
-#bodyArtistes{
+/*  ////////////      ARTISTES     //////////// */
+
+#bodyArtistes {
   background: #eeedf3;
 }
 
-#bodyArtistes #header{
+#bodyArtistes #header {
   background: #1D1D1D;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#artistes{
+#artistes {
   margin-top: 120px;
   margin-bottom: 120px;
   overflow: auto;
 }
 
-#artistes .col-md-4{
+#artistes .col-md-4 {
   height: 400px;
   margin: 50px 0;
 }
 
-#artistes .col-md-4 .col-md-8{
+#artistes .col-md-4 .col-md-8 {
   background: #FFF;
   height: 100%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.artistesImgContainer{
+.artistesImgContainer {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
 }
 
-.artistesImgContainer img{
+.artistesImgContainer img {
   width: 100%;
   height: auto;
 }
 
-.artistesTransition{
+.artistesTransition {
   background: #FFF;
   width: 100%;
   height: 50px;
@@ -962,7 +942,7 @@ button {
   transform: skewY(-8deg);
 }
 
-#artistes h2{
+#artistes h2 {
   width: 500px;
   height: auto;
   margin: auto;
@@ -973,14 +953,14 @@ button {
   background: ;
 }
 
-#artistes .barre{
+#artistes .barre {
   width: 150px;
   height: 7px;
   margin: auto;
   background: linear-gradient(to top left, #19AAB8, #73C8A9);
 }
 
-#artistes h3{
+#artistes h3 {
   position: absolute;
   width: 100%;
   bottom: 45px;
@@ -990,7 +970,7 @@ button {
   text-align: left;
 }
 
-#artistes p{
+#artistes p {
   position: absolute;
   bottom: 30px;
   left: 20px;
@@ -998,17 +978,55 @@ button {
 }
 
 
+/*  ////////////      ARTISTES     //////////// */
 
+/*  ////////////      FOOTER    //////////// */
 
+#footer {
+  width: 100%;
+  height: 200px;
+  background: #1D1D1D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+}
 
+#footer ul {
+  margin: auto;
+  width: 290px;
+  margin-top: 40px;
+}
 
+#footer ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  color: #F0F0F0;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #F0F0F0;
+  border-radius: 50%;
+  margin: 15px;
+}
 
+#footer ul li:hover{
+  background-color: #F0F0F0;
+}
 
+#footer ul li:hover a{
+  color: black;
+}
 
+#footer ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
+#footer .condition-general {
+  text-align: center;
+  margin-top: 50px;
+}
 
-
-
-
-
-
+/*  ////////////      FOOTER    //////////// */
