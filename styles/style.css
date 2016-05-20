@@ -29,11 +29,11 @@ body {
 /*      FOOTER     */
 #footer{
   width: 100%;
-  height: 200px;
   background: #1D1D1D;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   position: relative;
+  overflow: auto;
 }
 
 #footer ul{
@@ -55,6 +55,16 @@ body {
   margin: 15px;
 }
 
+#footer ul li:hover{
+  background: #F0F0F0;
+  color: #1D1D1D;
+  transition: all 0.4s linear;
+}
+
+#footer ul li:hover a{
+  color: #1D1D1D;
+  transition: all 0.4s linear;
+}
 #footer ul li a{
   width: 100%;
   height: 100%;
@@ -63,7 +73,10 @@ body {
 
 #footer .condition-general{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25px;
+  padding-top: 30px;
+  border-top: 1px solid #F0F0F0;
+  color: rgba(255,255,255,0.4);
 }
 
 
