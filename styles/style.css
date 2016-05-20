@@ -466,9 +466,10 @@ a:hover {
 
 #artisteHome img{
   width: 33.33%;
+  width: calc(100% / 3);
   height: auto;
   padding: 0;
-  margin: -4px;
+  margin: -2px;
 }
 
 #artisteHome .col-md-4{
