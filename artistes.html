@@ -15,8 +15,20 @@
     <link rel="stylesheet" href="styles/hamburgler.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/jquery-1.12.1.min.js"></script>
+    <script src="http://w.soundcloud.com/player/api.js"></script>
+  <script>
+   $(document).ready(function() {
+     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+     widget.bind(SC.Widget.Events.READY, function() {
+       console.log('Ready...');
+     });
+     $('.layerBackground, .closeButton').click(function() {
+       widget.pause();
+     });
+   });
+  </script>
   </head>
-
   <body id="bodyArtistes">
     <div class="container-fluid">
       <div class="row topBar">
@@ -64,13 +76,50 @@
         </header>
       </div>
       <div class="row">
+        <div class="layerBackground col-md-12"></div>
+        <div class="layerActiveArtiste">
+          <div class="layerRelative">
+            <div>
+              <img src="images/artistes/salahe.jpg" alt="artiste photo">
+            </div>
+            <div class="closeButton">
+              +
+            </div>
+            <div class="artisteSocial">
+              <span class="fa fa-stack">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+              </span>
+              <span class="fa fa-stack">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-soundcloud fa-stack-1x"></i>
+              </span>
+            </div>
+            <div class="artisteTitle">
+              <h4>Birds of mind</h4>
+              <h5>Techno</h5>
+            </div>
+            <div class="artisteDescribe">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita praesentium nam sed quod quae perferendis harum exercitationem, natus ad libero consequuntur quibusdam, vitae nostrum illum non enim! Corrupti, itaque!
+              </p>
+              <iframe id="soundcloud_widget"
+                      src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/258990131&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d"
+                      width="100%"
+                      height="110"
+                      frameborder="no"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <section id="artistes">
           <div class="col-md-12">
             <h2>Nos artistes</h2>
             <div class="barre"></div>
           </div>
           <div class="col-md-4">
-            <div class="col-md-8 col-md-offset-4">
+            <div class="col-md-8 col-md-offset-4 artisteContainer">242524406
               <div class="artistesImgContainer">
                 <img src="images/artistes/davidmears.jpg" alt=" photo de David Mears"/>
               </div>
@@ -80,7 +129,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/minds.jpg" alt=" photo de Birds of minds"/>
               </div>
@@ -90,7 +139,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="col-md-8 ">
+            <div class="col-md-8 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/salahe.jpg" alt=" photo de Nato & Sahalé"/>
               </div>
@@ -100,7 +149,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="col-md-8 col-md-offset-4">
+            <div class="col-md-8 col-md-offset-4 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/samarcande.jpg" alt=" photo de Samarcande"/>
               </div>
@@ -110,7 +159,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/silens.jpg" alt=" photo de Silens"/>
               </div>
@@ -120,7 +169,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="col-md-8 ">
+            <div class="col-md-8 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/victornorman.jpg" alt=" photo de Victor Norman"/>
               </div>
@@ -133,7 +182,7 @@
       </div>
       <div class="row">
         <footer id="footer">
-          <div class="col-md-4 col-md-offset-4">
+          <div class="col-md-4 col-md-offset-4 artisteContainer">
             <ul>
               <li><a href="#" title="lien twitter"><i class="fa fa-twitter"></i></a></li><!--
 --><li><a href="#" title="lien facebook"><i class="fa fa-facebook"></i></a></li><!--
@@ -141,13 +190,12 @@
             </ul>
           </div>
           <div class="col-md-6 col-md-offset-3 condition-general">
-            <p>© Rituel 2016 - Tout droits reservés - Design et developpement par des <a href="http://www.hetic.net" title="Lien Hetic"> Héticiens</a></p>
+            <p>© Rituel 2016 - Tout droits reservés - Design et developpement par des <a href="http://www.hetic.net" title="Lien Hetic" target="_blank"> Héticiens</a></p>
           </div>
         </footer>
       </div>
     </div>
     <!-- SCRIPTS -->
-    <script src="scripts/jquery-1.12.1.min.js"></script>
     <script src="scripts/jquery-ui.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
