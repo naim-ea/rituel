@@ -129,7 +129,11 @@ $(document).ready(function () {
     document.onkeydown = null;  
   }
 
-
+  $(".custom-options").on("click", function(){
+    if($(".custom-select-trigger").html()==("Birds of Mind")){
+      $("select").attr("value", "1");
+    }
+  })
 
 
 
