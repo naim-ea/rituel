@@ -17,19 +17,21 @@
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/jquery-1.12.1.min.js"></script>
     <script src="http://w.soundcloud.com/player/api.js"></script>
-  <script>
-   $(document).ready(function() {
-     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
-     widget.bind(SC.Widget.Events.READY, function() {
-       console.log('Ready...');
-     });
-     $('.layerBackground, .closeButton').click(function() {
-       widget.pause();
-     });
-   });
-  </script>
+    <script>
+      $(document).ready(function() {
+        var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+        widget.bind(SC.Widget.Events.READY, function() {
+          console.log('Ready...');
+        });
+        $('.layerBackground, .closeButton').click(function() {
+          widget.pause();
+        });
+      });
+    </script>
   </head>
   <body id="bodyArtistes">
+    <div class="loadAnimation"></div>
+
     <div class="container-fluid">
       <div class="row topBar">
         <header id="header">

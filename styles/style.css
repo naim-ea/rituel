@@ -185,15 +185,15 @@ a:hover {
 #header #menu li a div.underline {
   height: 1px;
   width: 0;
+  margin: auto;
   transition: .3s;
-  transform: translateY(37px);
+  transform: translateY(36px);
 }
 
 #header #menu li:hover a div.underline{
   background: white;
   width: 70%;
   transition: .3s;
-  margin: auto;
 }
 
 #header #menu li a {
@@ -216,6 +216,31 @@ a:hover {
   border-right: none;
 }
 
+.loadAnimation{
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  animation: load1 0.7s linear;
+  left: 50%:
+}
+
+@keyframes load1{
+  0%{
+    width: 0;
+    background: rgba(255,255,255,1);
+  }
+  75%{
+    background: rgba(255,255,255,0.75);
+  }
+  100%{
+    width: 100%;
+    background: rgba(255,255,255,0);
+  }
+  
+}
 
 /*
 /*  ////////////       ACCUEIL       //////////// */
