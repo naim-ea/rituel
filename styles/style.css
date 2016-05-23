@@ -183,15 +183,17 @@ a:hover {
 }
 
 #header #menu li a div.underline {
-  height: 2px;
+  height: 1px;
   width: 0;
   transition: .3s;
+  transform: translateY(37px);
 }
 
 #header #menu li:hover a div.underline{
   background: white;
-  width: 100%;
+  width: 70%;
   transition: .3s;
+  margin: auto;
 }
 
 #header #menu li a {
@@ -203,7 +205,7 @@ a:hover {
 }
 
 #header #menu li a:hover {
-  background: rgba(255, 255, 255, 0.05);
+
 }
 
 #header #menu li:first-child {
