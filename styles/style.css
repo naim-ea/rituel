@@ -16,6 +16,38 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -139,10 +171,6 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-::-webkit-scrollbar-track-piece {
-  background: red;
-}
-
 a {
   color: #F0F0F0;
   text-decoration: none;
@@ -156,7 +184,7 @@ a:hover {
 #header h1 {
   text-transform: uppercase;
   text-align: center;
-  width: 90%;
+  width: 100%;
   height: 60px;
   line-height: 60px;
   margin: 0;
@@ -239,7 +267,7 @@ a:hover {
     width: 100%;
     background: rgba(255,255,255,0);
   }
-  
+
 }
 
 /*
@@ -631,7 +659,7 @@ a:hover {
     margin: 30% 10%;
   }
   .artisteHome{
-    
+
   }
 }
 
@@ -696,7 +724,7 @@ a:hover {
     margin-top: 35px;
   }
   #artisteHome img{
-  width: 50%;
+    width: 50%;
   }
   #artisteHome img:first-child,#artisteHome img:last-child {
     display: none;
@@ -713,6 +741,9 @@ a:hover {
     width: 100%;
     padding: 0;
     margin-top: -30px;;
+  }
+  #header h1 {
+    width: 90%;
   }
 }
 
