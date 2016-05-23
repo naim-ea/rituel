@@ -152,8 +152,6 @@ $(document).ready(function () {
       $("select").attr("value", "6");
     }
   })
-  
-  
 
 
 

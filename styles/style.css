@@ -463,7 +463,6 @@ a:hover {
 .artisteBackground{
   position: absolute;
   height: 900px;
-  width: 100%;
   transition: all 0.4s linear;
 }
 
@@ -587,13 +586,6 @@ a:hover {
     padding: 0;
     margin: 100px auto;
   }
-  #artisteHome h3{
-    width: 80%;
-    margin: 30% 10%;
-  }
-  .artisteHome{
-    
-  }
 }
 
 
@@ -643,39 +635,19 @@ a:hover {
   #nextEvent .lineUp p {
     padding-top: 35px;
   }
-  #artisteHome {
-    height: 490px;
+  #artiste {
+    margin-top: 100px;
   }
-  #artisteHome .transition {
-    margin-top: -30px;
+  #artiste .transition {
+    margin-top: -130px;
     transform: translateY(-20px) skewY(2deg);
   }
-  #artisteHome .transition p {
-    padding-top:35px;
+  #artiste .transition p {
+    padding-top: 20px;
   }
-  #artisteHome .transition #barre {
-    margin-top: 35px;
+  #artiste .transition #barre {
+    margin-top: 50px;
   }
-  #artisteHome img{
-  width: 50%;
-  }
-  #artisteHome img:first-child,#artisteHome img:last-child {
-    display: none;
-  }
-  #artisteButton{
-    margin-top: 10px;
-  }
-  #artisteHome h3{
-    width: 80%;
-    margin: 30% 8%;
-  }
-  #owerflowHidden{
-    height: 400px;
-    width: 100%;
-    padding: 0;
-    margin-top: -30px;;
-  }
-  artistesImg
 }
 
 
