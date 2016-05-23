@@ -182,6 +182,18 @@ a:hover {
   font-size: 18px;
 }
 
+#header #menu li a div.underline {
+  height: 2px;
+  width: 0;
+  transition: .3s;
+}
+
+#header #menu li:hover a div.underline{
+  background: white;
+  width: 100%;
+  transition: .3s;
+}
+
 #header #menu li a {
   display: inline-block;
   width: 100%;
