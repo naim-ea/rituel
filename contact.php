@@ -24,7 +24,7 @@ session_start();
 if(!empty($errors)){
 	$_SESSION['errors'] = $errors;
 	$_SESSION['inputs'] = $_POST;
-	header('Location: index.php#contact');
+	header('Location: contact.html');
 }else{
 	$_SESSION['success'] = 1;
 
@@ -38,7 +38,7 @@ if(!empty($errors)){
 	// CONSTRUCTION DU MESSAGE *****************************************************************************
 	$message = '<html><body>';
 	$message .= "Vous avez reçu message de la part de " .$_POST['fname']." ".$_POST['lname']. " (".$_POST['mail'].") || Ce message provient du formulaire de contact du site rituel.fr<br><br>";
-	$message .= "<strong>Nom :</strong><br>".$_POST['fname']."<br><br>";
+	$message .= "<strong>Nom :</strong><br>".$_POST['fname']." ".$_POST['lname']."<br><br>";
 	$message .= "<strong>E-mail :</strong><br>".$_POST['mail']."<br><br>";
 	$message .= "<strong>Message :</strong><br>".$_POST['comm'];
 	$message .= '</body></html>';
@@ -46,7 +46,7 @@ if(!empty($errors)){
 
 
 	mail($emails[$_POST['dest']], $_POST['subj'], $message, $headers);
-	header('Location: index.php#contact');
+	header('Location: contact.html');
 }
 
 
