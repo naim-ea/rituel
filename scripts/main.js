@@ -13,7 +13,8 @@ $(document).ready(function () {
       $(".mobilenav").fadeToggle(500);
       $(".top-menu").toggleClass("top-animate");
       $(".mid-menu").toggleClass("mid-animate");
-      $(".bottom-menu").toggleClass("bottom-animate"); $('#header').toggleClass('backgroundDark');
+      $(".bottom-menu").toggleClass("bottom-animate");
+      $('#header').toggleClass('backgroundDark');
     });
   });
 
@@ -22,8 +23,8 @@ $(document).ready(function () {
   //SELECT CUSTOMISÉ SUR LA PAGE CONTACT
   $(".custom-select").each(function () {
     var classes = $(this).attr("class"),
-        id = $(this).attr("id"),
-        name = $(this).attr("name");
+      id = $(this).attr("id"),
+      name = $(this).attr("name");
     var template = '<div class="' + classes + '">';
     template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
     template += '<div class="custom-options">';
@@ -58,35 +59,34 @@ $(document).ready(function () {
 
 
   $(document).scroll(function () {
-    if ($(document).scrollTop() > 450){
+    if ($(document).scrollTop() > 450) {
       $('#header').addClass('backgroundDark');
-    }
-    else if ($(document).scrollTop() < 450){
+    } else if ($(document).scrollTop() < 450) {
       $('#header').removeClass('backgroundDark');
     }
   });
 
-  $('#artisteButton').on('mouseenter', function(){
+  $('#artisteButton').on('mouseenter', function () {
     $('.artisteBackground').removeClass('backgroundActive');
     $('.artistesImg').addClass('ImgActive');
   });
 
-  $('#artisteButton').on('mouseleave', function(){
+  $('#artisteButton').on('mouseleave', function () {
     $('.artisteBackground').addClass('backgroundActive');
     $('.artistesImg').removeClass('ImgActive');
   });
 
-  $('.artisteContainer').on('click', function(){
+  $('.artisteContainer').on('click', function () {
     $(this).parent('.col-md-4').addClass('activeArtiste');
   });
 
-  $('.layerBackground, .closeButton').on('click', function(){
+  $('.layerBackground, .closeButton').on('click', function () {
     $('.layerActiveArtiste').fadeOut();
     $('.layerBackground').fadeOut();
     enableScroll();
   });
 
-  $('.artisteContainer').on('click', function(){
+  $('.artisteContainer').on('click', function () {
     $('.layerActiveArtiste').fadeIn();
     $('.layerBackground').fadeIn();
     disableScroll();
@@ -95,13 +95,18 @@ $(document).ready(function () {
   $('.layerActiveArtiste').hide();
   $('.layerBackground').hide();
 
-  var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+  var keys = {
+    37: 1,
+    38: 1,
+    39: 1,
+    40: 1
+  };
 
   function preventDefault(e) {
     e = e || window.event;
     if (e.preventDefault)
       e.preventDefault();
-    e.returnValue = false;  
+    e.returnValue = false;
   }
 
   function preventDefaultForScrollKeys(e) {
@@ -116,22 +121,35 @@ $(document).ready(function () {
       window.addEventListener('DOMMouseScroll', preventDefault, false);
     window.onwheel = preventDefault; // modern standard
     window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-    window.ontouchmove  = preventDefault; // mobile
-    document.onkeydown  = preventDefaultForScrollKeys;
+    window.ontouchmove = preventDefault; // mobile
+    document.onkeydown = preventDefaultForScrollKeys;
   }
 
   function enableScroll() {
     if (window.removeEventListener)
       window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
   }
 
-  $(".custom-options").on("click", function(){
-    if($(".custom-select-trigger").html()==("Birds of Mind")){
+  $("select").attr("value", "0");
+  $(".custom-options").on("click", function () {
+    if ($(".custom-select-trigger").html() == ("Rituel")) {
+      $("select").attr("value", "0");
+    } else if ($(".custom-select-trigger").html() == ("Birds of Mind")) {
       $("select").attr("value", "1");
+    } else if ($(".custom-select-trigger").html() == ("Silens")) {
+      $("select").attr("value", "2");
+    } else if ($(".custom-select-trigger").html() == ("Nato and Sahale")) {
+      $("select").attr("value", "3");
+    } else if ($(".custom-select-trigger").html() == ("Victor and Norman")) {
+      $("select").attr("value", "4");
+    } else if ($(".custom-select-trigger").html() == ("David Mears")) {
+      $("select").attr("value", "5");
+    } else if ($(".custom-select-trigger").html() == ("Samarcande")) {
+      $("select").attr("value", "6");
     }
   })
   
