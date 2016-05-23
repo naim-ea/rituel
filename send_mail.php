@@ -26,7 +26,7 @@ if(!empty($errors)){
 	$_SESSION['inputs'] = $_POST;
 	header('Location: contact.php');
 }else{
-	$_SESSION['success'] = 1;
+	$_SESSION['success'] = '1';
 
 	// HEADER GENERIQUE ************************************************************************************
 	$headers = 'FROM: '.$_POST['fname'].$_POST['lname'].'<'.$_POST['mail'].'>'."\n";

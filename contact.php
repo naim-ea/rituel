@@ -61,17 +61,19 @@ session_start();?>
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
 
+        <?php if(array_key_exists('errors', $_SESSION)): ?>
+        <div class="alert alert-danger">
+          <?= implode('<br>', $_SESSION['errors']); ?>
+        </div>
+        <?php  endif; ?>
+        <?php if(array_key_exists('success', $_SESSION)): ?>
+        <div class="alert alert-success">
+          Votre email à bien été envoyé !!
+        </div>
+        <?php  endif; ?>
+
         <form action="send_mail.php" method="POST">
-          <?php if(array_key_exists('errors', $_SESSION)): ?>
-          <div class="alert alert-danger">
-            <?= implode('<br>', $_SESSION['errors']); ?>
-          </div>
-          <?php  endif; ?>
-          <?php if(array_key_exists('no', $tab)): ?>
-          <div class="alert alert-success">
-            Votre email à bien été envoyé !!
-          </div>
-          <?php  endif; ?>
+
           <label for="sources" class="col-xs-4  col-xs-offset-1 col-sm-4  col-sm-offset-1 col-md-4  col-md-offset-1 col-lg-4 col-lg-offset-1">Destinataire</label>
           <select name="dest" id="sources" class="custom-select sources col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Rituel">
             <option value="0">Rituel</option>
@@ -82,8 +84,8 @@ session_start();?>
             <option value="5">David Mears</option>
             <option value="6">Samarcande</option>
           </select>
-          <input required type="text" name="fname" placeholder="Prénom" class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-          <input required type="text" name="lname" placeholder="Nom" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+          <input type="text" name="fname" placeholder="Prénom" class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
+          <input type="text" name="lname" placeholder="Nom" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
           <input required type="email" name="mail" placeholder="Email" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
           <input type="text" name="subj" placeholder="Sujet" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
           <textarea required name="comm" placeholder="Commentaire" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1"></textarea>
