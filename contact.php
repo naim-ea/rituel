@@ -30,7 +30,7 @@ session_start();?>
             <nav id="menu">
               <ul>
                 <li><a href="artistes.html" title="page artistes"><div class="underline"></div>artistes</a></li><!--
---><li><a href="#" title="page evenements"><div class="underline"></div>evenements</a></li><!--
+--><li><a href="events.html" title="page evenements"><div class="underline"></div>evenements</a></li><!--
 --><li><a href="#" title="page a propose"><div class="underline"></div>a propos</a></li><!--
 --><li><a href="contact.php" title="page contact"><div class="underline"></div>contact</a></li>
               </ul>
@@ -51,7 +51,7 @@ session_start();?>
             <nav id="menu">
               <ul>
                 <li><a href="artistes.html" title="page artistes">artistes</a></li><!--
---><li><a href="#" title="page evenements">evenements</a></li><!--
+--><li><a href="events.html" title="page evenements">evenements</a></li><!--
 --><li><a href="#" title="page a propose">a propos</a></li><!--
 --><li><a href="contact.php" title="page contact">contact</a></li>
               </ul>
