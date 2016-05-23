@@ -57,14 +57,17 @@ $(document).ready(function () {
   });
 
 
+  //CHANGEMENT BG HEADER AU SCROLL 
   $(document).scroll(function () {
-    if ($(document).scrollTop() > 450){
+    if ($(document).scrollTop() > 450 && !$('.top-menu').hasClass('top-animate')){
       $('#header').addClass('backgroundDark');
     }
-    else if ($(document).scrollTop() < 450){
+    else if ($(document).scrollTop() < 450 && !$('.top-menu').hasClass('top-animate')){
       $('#header').removeClass('backgroundDark');
     }
   });
+  
+  
 
   $('#artisteButton').on('mouseenter', function(){
     $('.artisteBackground').removeClass('backgroundActive');
