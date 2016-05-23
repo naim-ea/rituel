@@ -1,7 +1,7 @@
 <?php
 
 $errors = array();
-$emails = ["toast.nine@gmail.com", "elayadinaim@gmail",  "naim.el-ayadi@hetic.net", "gautier.maillard@hetic.net", "baptiste.villain@hetic.net", "kenrig.dalle@hetic.net", "louis.ghodsi@hetic.net"];
+$emails = array('toast.nine@gmail.com', 'elayadinaim@gmail',  'naim.el-ayadi@hetic.net', 'gautier.maillard@hetic.net', 'baptiste.villain@hetic.net', 'kenrig.dalle@hetic.net', 'louis.ghodsi@hetic.net');
 
 
 
