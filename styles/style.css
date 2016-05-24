@@ -1216,7 +1216,7 @@ iframe{
 
 #artistes .barre{
   width: 150px;
-  height: 7px;
+  height: 6px;
   margin: auto;
   background: linear-gradient(to top left, #19AAB8, #73C8A9);
 }
@@ -1239,8 +1239,210 @@ iframe{
 }
 
 
+/*  ////////////      EVENEMENTS      //////////// */
+
+#bodyEvenements{
+  background: #eeedf3;
+}
+
+#bodyEvenements header{
+  background: #1D1D1D;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#bodyEvenements .title{
+  width: 100%;
+  height: 100px;
+  background: #efeef4;
+  margin-top: 60px;
+}
+
+#bodyEvenements .title h1{
+  line-height: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  font-family: "Bebas", sans-serif;
+}
+
+#bodyEvenements .title .barre{
+  width: 150px;
+  height: 6px;
+  background: linear-gradient(to top left, #19AAB8, #73C8A9);
+  margin: auto;
+}
+
+.FirstEvent{
+  position: relative;
+  margin-top: 160px;
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#EventImg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: -100px;
+}
 
 
+#EventImg img{
+  width: 100%;
+}
+
+#backgroundEvent{
+  width: 100%;
+  height: 700px;
+  background: rgba(255,255,255,0.4);
+  position: absolute;
+}
+
+.firstDescribe{
+  background: rgba(0,0,0,0.5);
+  height: 450px;
+}
+
+.firstDescribe h2{
+  color: #F0F0F0;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 90px;
+  margin-top: 70px;
+}
+
+.firstDescribe h3{
+  color: #F0F0F0;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+.firstDescribe .barre{
+  width: 150px;
+  height: 3px;
+  background: #F0F0F0;
+  margin: 10px auto;
+}
+
+.firstDescribe p{
+  color: #F0F0F0;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  margin-top: 0px;
+}
+
+.firstDescribeNext{
+  background: #fff;
+  height: 130px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.firstDescribeNext p{
+  font-family: "raleway", sans-serif;
+  width: 90%;
+  margin: 10px auto;
+  font-size: 22px;
+  text-align: center;
+}
+
+.firstDescribeNext a{
+  display: block;
+  background: #1D1D1D;
+  color: #F0F0F0;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  padding: 7px;
+  font-size: 18px;
+  font-family: "raleway", sans-serif;
+  border-radius: 5px;
+}
+
+#aVenir{
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+#aVenir h2{
+  width: 100%;
+  text-align: center;
+  font-family: "Bebas";
+  font-size: 40px;
+  color: #1D1D1D;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #1D1D1D;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#aVenir li{
+  list-style: none;
+}
+
+#aVenir li:after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 90%;
+  margin: 5px auto;
+  background: #1D1D1D;
+}
+
+#aVenir li:last-child:after { 
+  display: none;
+}
+
+#aVenir ul{
+  padding: 0;
+  margin: 0;
+}
+
+#aVenir h4{
+  font-family: "raleway", sans-serif;
+  display: inline-block;
+  width: 45%;
+  font-size: 16px;
+  margin: 0 2%;
+  margin-left: 0;
+}
+
+#aVenir p{
+  display: inline-block;
+  margin: 0 2%;
+}
+
+#aVenir .lieu{
+  width: 20%;
+}
+
+#aVenir .date{
+  width: 15%;
+}
+
+#aVenir .lien{
+  display: inline-block;
+  color: #F0F0F0;
+  text-align: center;
+  width: 10%;
+  background: #1D1D1D;
+  border-radius: 5px;
+  padding: 4px 0;
+}
+
+#bodyEvenements footer{
+  margin-top: 50px;
+}
 
 
 

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
-  <body>
+  <body id="bodyEvenements">
     <div class="loadAnimation"></div>
     <div class="container-fluid">
       <div class="row topBar">
@@ -29,8 +29,8 @@
             <nav id="menu">
               <ul>
                 <li><a href="artistes.html" title="page artistes"><div class="underline"></div>artistes</a></li><!--
---><li><a href="evenements.html" title="page evenements"><div class="underline"></div>evenements</a></li><!--
---><li><a href="propos" title="page a propos"><div class="underline"></div>a propos</a></li><!--
+--><li><a href="#" title="page evenements"><div class="underline"></div>evenements</a></li><!--
+--><li><a href="#" title="page a propose"><div class="underline"></div>a propos</a></li><!--
 --><li><a href="contact.php" title="page contact"><div class="underline"></div>contact</a></li>
               </ul>
             </nav>
@@ -52,88 +52,61 @@
                 <li><a href="artistes.html" title="page artistes">artistes</a></li>
                 <!--
 -->
-                <li><a href="evenements.html" title="page evenements">evenements</a></li>
+                <li><a href="#" title="page evenements">evenements</a></li>
                 <!--
 -->
-                <li><a href="propos.html" title="page a propose">a propos</a></li>
+                <li><a href="#" title="page a propose">a propos</a></li>
                 <!--
 -->
-                <li><a href="contact.phevents.html" title="page contact">contact</a></li>
+                <li><a href="contact.php" title="page contact">contact</a></li>
               </ul>
             </nav>
           </div>
         </header>
       </div>
       <div class="row">
-        <section id="entete">
-          <div class=" col-sm-12 col-md-10 col-md-push-1">
-            <h2>rituel</h2>
+        <div class="col-md-12 title">
+          <h1>Prochain &nbsp; evenement</h1>
+          <div class="barre"></div>
+        </div>
+        <section class="FirstEvent">
+          <div id="EventImg">
+            <img src="images/firstEvent2.jpg" alt="image evenement"/>
           </div>
-          <div class=" col-sm-12 col-md-6 col-md-push-3">
-            <p>
-              « Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              <br/> incididunt ut labore et dolore magna aliqua. »
-            </p>
-          </div>
-        </section>
-      </div>
-      <div class="row">
-        <section id="nextEvent" data-parallax="scroll" data-image-src="images/nextEvent.jpg" data-natural-width="2048" data-natural-height="1079" data-speed="0.5" data-ios-fix="true" data-android-fix="true">
-          <div class="nextEventBackground"></div>
-          <div class="col-md-12 transition">
-            <h2>prochain evenement</h2>
-            <div id="barre"></div>
-          </div>
-          <div class="col-sm-12 col-md-8 describe">
-            <div class="col-sm-12 col-md-10 col-md-push-1">
-              <h3>rituel</h3>
-              <h3>rituel</h3>
-            </div>
-            <div class="col-sm-12 col-md-8 col-md-push-2">
-              <h4>Au Pavillon des étangs</h4>
-              <div class="barre"></div>
-              <h5>Le 19 Juin</h5>
-            </div>
-          </div>
-          <div class="col-md-4 lineUp">
-            <div class="col-md-6 col-md-push-3">
-              <h3>line up</h3>
-            </div>
-            <div class="col-md-8 col-md-push-2">
-              <ul>
-                <li>howling</li>
-                <li>saycet</li>
-                <li>brettlongmann</li>
-                <li>employee of the year</li>
-
-              </ul>
-              <p>et plein d'autres</p>
-            </div>
+          <div id="backgroundEvent"></div>
+          <div class="col-md-6 col-md-offset-3 firstDescribe">
+            <h2>rituel<br/> symphonia</h2>
+            <h3>Au pavillon des étangs</h3>
+            <div class="barre"></div>
+            <p>Le 29 mai</p>
           </div>
         </section>
+        <div class="col-md-6 col-md-offset-3 firstDescribeNext">
+          <p>Howling Live, Saycet, Brett Longmann <br/> et plein d'autres...</p>
+          <a href="#" title="event Facebook">facebook</a>
+        </div>
       </div>
       <div class="row">
-        <section id="artisteHome">
-          <div class="col-md-12 transition">
-            <p>
-              « Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              <br/> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »
-            </p>
-            <div id="barre"></div>
-          </div>
-          <div id="owerflowHidden">
-            <div class="col-md-4 col-md-offset-4">
-              <a href="artistes.html" alt="Vers la page artiste" id="artisteButton"><h3>artistes</h3></a>
-            </div>
-            <div class="col-md-12 .col-sm-12 artistesImg">
-              <img src="images/artistes/victornorman.jpg" alt=" photo de Victor Norman"/>
-              <img src="images/artistes/davidmears.jpg" alt=" photo de David Mears"/>
-              <img src="images/artistes/minds.jpg" alt=" photo de Birds of minds"/>
-              <img src="images/artistes/salahe.jpg" alt=" photo de Nato & Sahalé"/>
-              <img src="images/artistes/samarcande.jpg" alt=" photo de Samarcande"/>
-              <img src="images/artistes/silens.jpg" alt=" photo de Silens"/>
-            </div>
-            <div class="col-md-12 artisteBackground backgroundActive"></div>
+        <section id="aVenir">
+          <div class="col-md-10 col-md-offset-1">
+            <h2>a venir</h2>
+            <ul>
+              <li>
+                <h4>RITUEL : Blond:ish [Live] : Francesca Lombardo...</h4><p class="lieu">Le Pavillon</p><p class="date">Le 17 </p><a href="#" title="event Facebook" class="lien">facebook</a>
+              </li>
+              <li>
+                <h4>RITUEL : Blond:ish [Live] : Francesca Lombardo...</h4><p class="lieu">Le Pavillon</p><p class="date">Le 17 </p><a href="#" title="event Facebook" class="lien">facebook</a>
+              </li>
+              <li>
+                <h4>RITUEL : Blond:ish [Live] : Francesca Lombardo...</h4><p class="lieu">Le Pavillon</p><p class="date">Le 17 </p><a href="#" title="event Facebook" class="lien">facebook</a>
+              </li>
+              <li>
+                <h4>RITUEL : Blond:ish [Live] : Francesca Lombardo...</h4><p class="lieu">Le Pavillon</p><p class="date">Le 17 </p><a href="#" title="event Facebook" class="lien">facebook</a>
+              </li>
+              <li>
+                <h4>RITUEL : Blond:ish [Live] : Francesca Lombardo...</h4><p class="lieu">Le Pavillon</p><p class="date">Le 17 </p><a href="#" title="event Facebook" class="lien">facebook</a>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
