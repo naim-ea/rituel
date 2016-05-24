@@ -30,7 +30,7 @@ if(!empty($errors)){
 
   // HEADER GENERIQUE ************************************************************************************
   $headers = 'FROM: '.$_POST['fname'].$_POST['lname'].'<'.$_POST['mail'].'>'."\n";
-  $headers .= 'Reply-To: '.$_POST['fname'].$_POST['lname'].'<'.$_POST['mail'].'>'."\n";
+  $headers .= 'Reply-To: '.$_POST['fname']." ".$_POST['lname'].'<'.$_POST['mail'].'>'."\n";
   $headers .= 'MIME-Version: 1.0' . "\n";
   $headers .= "X-Priority: 3" . "\n";
   $headers .= 'Content-Type: text/html; charset="utf-8"'. "\n";
