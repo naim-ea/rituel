@@ -29,12 +29,11 @@ if(!empty($errors)){
   $_SESSION['success'] = '1';
 
   // HEADER GENERIQUE ************************************************************************************
-  $headers = 'FROM: '.$_POST['fname'].$_POST['lname'].'<'.$_POST['mail'].'>'."\n";
+  $headers = 'FROM: rituel.fr'."\n";
   $headers .= 'Reply-To: '.$_POST['fname']." ".$_POST['lname'].'<'.$_POST['mail'].'>'."\n";
   $headers .= 'MIME-Version: 1.0' . "\n";
   $headers .= "X-Priority: 3" . "\n";
   $headers .= 'Content-Type: text/html; charset="utf-8"'. "\n";
-  $headers .= "Bcc: contact@mmmkr.com" . "\n";
 
   // CONSTRUCTION DU MESSAGE *****************************************************************************
   $message = '<html><body>';
