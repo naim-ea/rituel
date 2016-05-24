@@ -87,7 +87,7 @@ session_start();?>
           <input type="text" name="fname" placeholder="Prénom" class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
           <input type="text" name="lname" placeholder="Nom" class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
           <input required type="email" name="mail" placeholder="Email" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-          <input type="text" name="subj" placeholder="Sujet" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+          <input type="text" name="subj" placeholder="Sujet" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" autocomplete="off">
           <textarea required name="comm" placeholder="Commentaire" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1"></textarea>
           <button type="submit" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 submit">ENVOYER</button>
         </form>
