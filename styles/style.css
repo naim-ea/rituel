@@ -1498,6 +1498,89 @@ iframe{
   margin-top: 50px;
 }
 
+/********************************************************************************************************
+
+
+                                  A PROPOS
+
+/*******************************************************************************************************/
+
+#videoPres{
+  height: 500px;
+}
+
+#story{
+  height: 375px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+
+}
+
+#story h2{
+    font-family: "Bebas";
+}
+
+#story div.underline {
+  height: 2px;
+  width: 10%;
+  margin: auto
+  background-color: #1D1D1D;
+}
+
+#story p{
+  margin-top: 70px;
+}
+
+#members{
+  height: 500px;
+  
+}
+
+#members .col-md-4{
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 400px;
+  transition: all 0.2s linear;
+}
+
+#members .col-md-4 .artisteContainer{
+  background: #FFF;
+  height: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+#members h3{
+  position: absolute;
+  width: 100%;
+  bottom: 45px;
+  left: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 35px;
+  text-align: left;
+  background: #fff;
+}
+
+#members p:first-of-type{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#members p:nth-of-type(2){
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
 
 
 
