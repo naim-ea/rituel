@@ -3,9 +3,18 @@
 $errors = array();
 $emails = array('toast.nine@gmail.com', 'elayadinaim@gmail.com',  'naim.el-ayadi@hetic.net', 'gautier.maillard@hetic.net', 'baptiste.villain@hetic.net', 'kenrig.dalle@hetic.net', 'louis.ghodsi@hetic.net');
 
+if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
+{
+  $passage_ligne = "\r\n";
+}
+else
+{
+  $passage_ligne = "\n";
+}
 
+$boundary = "-----=".md5(rand());
 
-// VERIF GENERIQUES ***************************************************************************
+// VERIF ERREURS ***************************************************************************
 if(!array_key_exists('fname', $_POST) || $_POST['fname'] == ''){
   $errors['fname'] = "Vous n'avez pas renseigné votre prénom";
 }
@@ -29,19 +38,26 @@ if(!empty($errors)){
   $_SESSION['success'] = '1';
 
   // HEADER GENERIQUE ************************************************************************************
-  $headers = 'FROM: rituel.fr'."\n";
-  $headers .= 'Reply-To: '.$_POST['fname']." ".$_POST['lname'].'<'.$_POST['mail'].'>'."\n";
-  $headers .= 'MIME-Version: 1.0' . "\n";
-  $headers .= "X-Priority: 3" . "\n";
-  $headers .= 'Content-Type: text/html; charset="utf-8"'. "\n";
+  $headers = 'From: rituel.fr'.$passage_ligne;
+  $headers .= 'Reply-To: '.$_POST['fname']." ".$_POST['lname'].'<'.$_POST['mail'].'>'.$passage_ligne;
+  $headers .= 'MIME-Version: 1.0' . $passage_ligne;
+  $headers .= "X-Priority: 3" . $passage_ligne;
+  $headers .= 'Content-Type: text/html; charset="utf-8"'. $passage_ligne;
 
   // CONSTRUCTION DU MESSAGE *****************************************************************************
+  $message = $passage_ligne."--".$boundary.$passage_ligne;
+  $message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+  $message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+  $message.= $passage_ligne;
   $message = '<html><body>';
   $message .= "Vous avez reçu message de la part de " .$_POST['fname']." ".$_POST['lname']. " (".$_POST['mail'].") || Ce message provient du formulaire de contact du site rituel.fr<br><br>";
   $message .= "<strong>Nom :</strong><br>".$_POST['fname']." ".$_POST['lname']."<br><br>";
   $message .= "<strong>E-mail :</strong><br>".$_POST['mail']."<br><br>";
   $message .= "<strong>Message :</strong><br>".$_POST['comm'];
   $message .= '</body></html>';
+  $message .= $passage_ligne;
+  $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+  $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 
 
 
@@ -51,3 +67,4 @@ if(!empty($errors)){
 
 
 ?>
+
