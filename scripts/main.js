@@ -137,7 +137,14 @@ $(document).ready(function () {
       $("select").attr("value", "1");
     }
   })
-
+  
+  $('.NextEventName').html(nextEvent["nom"]);
+  $('.NextEventLieu').html(nextEvent["lieu"]);
+  $('.NextEventDate').html(nextEvent["date"]);
+  for(i = 1; i < 5; i++){
+    $('.artiste_' + i).html(lineUp["artiste_"+i]);
+    console.log("artiste_"+i);
+  };
 
 
 

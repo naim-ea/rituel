@@ -1,0 +1,22 @@
+var nextEvent = {
+  "nom": "Rituel",
+  "lieu": "au Pavillon des étangs",
+  "date": "le 29 mai",
+  "description": "Description de l'évenement qui doit être vraiment bien hein, n'est-ce pas",
+}
+
+var lineUp = {
+  "artiste_1": "Howling Live",
+  "artiste_2": "Saycet",
+  "artiste_3": "Brett Longman",
+  "artiste_4": "employee of the year",
+}
+
+var eventList = {
+  "event_1": {
+    "nom": "Rituel",
+    "smallLineUp": "Blond:ish, Francesca Lombardo",
+    "lieu": "Le Pavillon",
+    "date": "Le 17/05/2016",
+  }
+}
