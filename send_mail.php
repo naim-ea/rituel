@@ -12,7 +12,6 @@ else
   $passage_ligne = "\n";
 }
 
-$boundary = "-----=".md5(rand());
 
 // VERIF ERREURS ***************************************************************************
 if(!array_key_exists('fname', $_POST) || $_POST['fname'] == ''){
@@ -38,7 +37,7 @@ if(!empty($errors)){
   $_SESSION['success'] = '1';
 
   // HEADER GENERIQUE ************************************************************************************
-  $headers = 'From: rituel.fr'.$passage_ligne;
+  $headers = 'From:'.$_POST['mail'].$passage_ligne;
   $headers .= 'Reply-To: '.$_POST['fname']." ".$_POST['lname'].'<'.$_POST['mail'].'>'.$passage_ligne;
   $headers .= 'MIME-Version: 1.0' . $passage_ligne;
   $headers .= "X-Priority: 3" . $passage_ligne;
@@ -56,8 +55,6 @@ if(!empty($errors)){
   $message .= "<strong>Message :</strong><br>".$_POST['comm'];
   $message .= '</body></html>';
   $message .= $passage_ligne;
-  $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
-  $message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 
 
 
