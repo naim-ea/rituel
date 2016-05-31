@@ -2,6 +2,7 @@
 
 $errors = array();
 $emails = array('toast.nine@gmail.com', 'elayadinaim@gmail.com',  'naim.el-ayadi@hetic.net', 'gautier.maillard@hetic.net', 'baptiste.villain@hetic.net', 'kenrig.dalle@hetic.net', 'louis.ghodsi@hetic.net');
+$mail = 'rituel.fr';
 
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 {
@@ -37,7 +38,7 @@ if(!empty($errors)){
   $_SESSION['success'] = '1';
 
   // HEADER GENERIQUE ************************************************************************************
-  $headers = 'From:'.$_POST['mail'].$passage_ligne;
+  $headers = 'From:'.$mail.$passage_ligne;
   $headers .= 'Reply-To: '.$_POST['fname']." ".$_POST['lname'].'<'.$_POST['mail'].'>'.$passage_ligne;
   $headers .= 'MIME-Version: 1.0' . $passage_ligne;
   $headers .= "X-Priority: 3" . $passage_ligne;
