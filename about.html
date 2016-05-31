@@ -29,7 +29,7 @@
       });
     </script>
   </head>
-  <body id="bodyArtistes">
+  <body id="bodyAbout">
     <div class="loadAnimation"></div>
     <div class="container-fluid">
       <div class="row topBar">
@@ -78,7 +78,12 @@
       </div>
       <div class="row">
         <div id="videoPres">
-          
+          <!--Bannière-->
+          <video autoplay poster="video/Rituel%20Video%20-%20HQ.mp4" id="bgvid" loop>
+            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+            <source src="video/Rituel%20Video%20-%20HQ.mp4" type="video/webm">
+            <source src="video/Rituel%20Video%20-%20HQ.mp4" type="video/mp4">
+          </video>
 
         </div>
       </div>
