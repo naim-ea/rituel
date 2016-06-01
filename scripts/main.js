@@ -66,8 +66,8 @@ $(document).ready(function () {
       $('#header').removeClass('backgroundDark');
     }
   });
-  
-  
+
+
 
   $('#artisteButton').on('mouseenter', function(){
     $('.artisteBackground').removeClass('backgroundActive');
@@ -137,14 +137,18 @@ $(document).ready(function () {
       $("select").attr("value", "1");
     }
   })
-  
+
   $('.NextEventName').html(nextEvent["nom"]);
   $('.NextEventLieu').html(nextEvent["lieu"]);
   $('.NextEventDate').html(nextEvent["date"]);
   for(i = 1; i < 5; i++){
     $('.artiste_' + i).html(lineUp["artiste_"+i]);
-    console.log("artiste_"+i);
   };
+
+  for(i = 1; i <= Object.keys(eventList).length; i++){
+    $("#aVenir ul").append('<li><h4>' + eventList["event_"+i]["nom"] + '</h4><p class="lineUp">' + eventList["event_"+i]["smallLineUp"] + '...</p><p class="lieu">' + eventList["event_"+i]["lieu"] + '</p><p class="date">' + eventList["event_"+i]["date"] + '</p><a href="#" title="event Facebook" class="lien">facebook</a></li>');
+  };
+
 
 
 
