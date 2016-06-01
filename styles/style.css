@@ -1556,19 +1556,14 @@ video {
   padding: 20px;
 }
 
-#story h2 {
-  font-family: "Bebas";
-}
-
-#story div.underline {
-  height: 2px;
-  width: 10%;
-  margin: auto;
-  background-color: #1D1D1D;
-}
-
 #story p {
-  margin-top: 70px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+#story .title{
+  margin: 0;
+  background: #FFF;
 }
 
 #members {
