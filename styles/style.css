@@ -1335,7 +1335,7 @@ iframe {
   height: 6px;
   background: linear-gradient(to top left, #19AAB8, #73C8A9);
   margin: auto;
-  animation: growth 1s ease-out;
+  animation: growth 1s ease-in;
 }
 
 .FirstEvent {
