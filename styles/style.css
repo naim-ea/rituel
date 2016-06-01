@@ -352,29 +352,16 @@ a:hover {
   z-index: 100;
 }
 
-
 /* 2EME SECTION */
 
-#nextEvent h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  margin: 35px 0 0 0;
-  text-transform: uppercase;
-  color: #4A4A4A;
+#nextEvent .transition h1, .transition .barre{
   transform: skewY(-2deg);
-  font-weight: 600;
-  padding: 0;
+  margin-top: 15px;
 }
 
-#nextEvent .transition #barre {
-  height: 2px;
-  width: 200px;
-  background: #4A4A4A;
-  transform: skewY(-2deg);
-  margin: 0 auto;
+#nextEvent .transition.title{
+  height: 140px;
+  margin-top: 0px;
 }
 
 #nextEvent .col-md-8 {
@@ -514,9 +501,10 @@ a:hover {
   margin-top: 60px;
 }
 
-#artisteHome .transition {
+#artisteHome .transition.title{
   margin-top: -50px;
   z-index: 1000;
+  height: 140px;
 }
 
 #artisteHome .transition p {
