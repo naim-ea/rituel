@@ -356,7 +356,7 @@ a:hover {
 
 #nextEvent .transition h1, .transition .barre{
   transform: skewY(-2deg);
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 #nextEvent .transition.title{
@@ -422,7 +422,7 @@ a:hover {
 
 #nextEvent .describe .barre {
   background: #F0F0F0;
-  width: 120px;
+  width: 150px;
   height: 2px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   margin: auto;
@@ -508,7 +508,7 @@ a:hover {
 }
 
 #artisteHome .transition p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   width: 100%;
   height: 60px;
   line-height: 20px;
@@ -517,7 +517,6 @@ a:hover {
   margin: 40px 0 0 0;
   color: #4A4A4A;
   transform: skewY(-2deg);
-  font-weight: normal;
 }
 
 #artisteHome .artistesImg {
@@ -1201,13 +1200,19 @@ iframe {
 }
 
 #artistes {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
   overflow: auto;
 }
 
 #artistes .col-md-4 {
   height: 400px;
-  margin: 50px 0;
+  margin: 20px 0;
+  transition: all 0.2s linear;
+}
+
+#artistes .col-md-4.marginTop{
+  height: 400px;
+  margin-top: 60px;
   transition: all 0.2s linear;
 }
 
@@ -1231,8 +1236,12 @@ iframe {
 }
 
 .artistesImgContainer img {
-  height: 50%;
+  width: 100%;
   height: auto;
+}
+
+.artisteContainer:hover .artistesTransition{
+  transform: skewY(8deg) scaleX(1.3);
 }
 
 .artistesTransition {
@@ -1243,6 +1252,7 @@ iframe {
   left: 0;
   position: absolute;
   transform: skewY(-8deg);
+  transition: all 0.2s linear;
 }
 
 #artistes h2 {
@@ -1310,9 +1320,10 @@ iframe {
 }
 
 .title h1 {
-  line-height: 80px;
-  height: 80px;
+  line-height: 60px;
+  height: 60px;
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   text-align: center;
   width: 100%;
@@ -1324,6 +1335,7 @@ iframe {
   height: 6px;
   background: linear-gradient(to top left, #19AAB8, #73C8A9);
   margin: auto;
+  animation: growth 1s ease-out;
 }
 
 .FirstEvent {
@@ -1599,4 +1611,15 @@ video {
   bottom: 10px;
   left: 20px;
   font-family: 'Raleway', sans-serif;
+}
+
+@keyframes growth{
+  0%{
+    width: 0;
+    margin: auto;
+  }
+  100%{
+    width: 150px;
+    margin: auto;
+  }
 }
