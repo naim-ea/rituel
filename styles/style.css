@@ -1315,14 +1315,13 @@ iframe {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#bodyEvenements .title, #artistes .title {
-  width: 100%;
+.title {
   height: 100px;
   background: #efeef4;
   margin-top: 60px;
 }
 
-#bodyEvenements .title h1, #artistes .title h1 {
+.title h1 {
   line-height: 80px;
   height: 80px;
   margin: 0;
@@ -1332,7 +1331,7 @@ iframe {
   font-family: "Bebas", sans-serif;
 }
 
-#bodyEvenements .title .barre {
+.title .barre {
   width: 150px;
   height: 6px;
   background: linear-gradient(to top left, #19AAB8, #73C8A9);
