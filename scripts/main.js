@@ -148,7 +148,6 @@ $(document).ready(function () {
   for(i = 1; i <= Object.keys(eventList).length; i++){
     $("#aVenir ul").append('<li><h4>' + eventList["event_"+i]["nom"] + '</h4><p class="lineUp">' + eventList["event_"+i]["smallLineUp"] + '...</p><p class="lieu">' + eventList["event_"+i]["lieu"] + '</p><p class="date">' + eventList["event_"+i]["date"] + '</p><a href="#" title="event Facebook" class="lien">facebook</a></li>');
   };
-/*
 
   $('.artisteMore').hide();
 
@@ -172,6 +171,8 @@ $(document).ready(function () {
       
     }
     
+    setTimeout(function(){
+    
     if($('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
       $('.artisteMore .col-md-8').addClass('col-md-offset-2');
       $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
@@ -184,7 +185,8 @@ $(document).ready(function () {
       $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
       $('.artisteMore .col-md-8').addClass('col-md-offset-4');
     }
-  });*/
+      }, 200);
+  });
   /*
   $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
   $('.artisteMore .col-md-8').addClass('col-md-offset-4');

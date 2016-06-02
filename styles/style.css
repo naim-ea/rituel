@@ -1320,14 +1320,11 @@ iframe {
 
 .artisteMore .col-md-4{
   transition: all 0.5s linear;
-  background: red;
   position: relative;
 }
 
 .artisteMore .col-md-4 .col-md-8{
-  margin: auto;
-  width: 100%;
-  background: green;
+  transition: all 0.5s linear;
 }
 
 
