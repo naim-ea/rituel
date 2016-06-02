@@ -67,7 +67,7 @@ $(document).ready(function () {
     }
   });
 
-
+  /*
 
   $('#artisteButton').on('mouseenter', function(){
     $('.artisteBackground').removeClass('backgroundActive');
@@ -131,7 +131,7 @@ $(document).ready(function () {
     window.ontouchmove = null;  
     document.onkeydown = null;  
   }
-
+*/
   $(".custom-options").on("click", function(){
     if($(".custom-select-trigger").html()==("Birds of Mind")){
       $("select").attr("value", "1");
@@ -148,9 +148,51 @@ $(document).ready(function () {
   for(i = 1; i <= Object.keys(eventList).length; i++){
     $("#aVenir ul").append('<li><h4>' + eventList["event_"+i]["nom"] + '</h4><p class="lineUp">' + eventList["event_"+i]["smallLineUp"] + '...</p><p class="lieu">' + eventList["event_"+i]["lieu"] + '</p><p class="date">' + eventList["event_"+i]["date"] + '</p><a href="#" title="event Facebook" class="lien">facebook</a></li>');
   };
+/*
 
+  $('.artisteMore').hide();
 
+  $('.artisteContainer').on('click', function(){
+    $('.artisteMore').slideDown();
+    if($(this).hasClass('col1')){
+      $('.artisteMore .col-md-4').removeClass('col-md-offset-4');
+      $('.artisteMore .col-md-4').removeClass('col-md-offset-8');
+      
+    }
 
+    if($(this).hasClass('col2')){
+      $('.artisteMore .col-md-4').removeClass('col-md-offset-8');
+      $('.artisteMore .col-md-4').addClass('col-md-offset-4');
+      
+    }
 
+    if($(this).hasClass('col3')){
+      $('.artisteMore .col-md-4').removeClass('col-md-offset-4');
+      $('.artisteMore .col-md-4').addClass('col-md-offset-8');
+      
+    }
+    
+    if($('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
+      $('.artisteMore .col-md-8').addClass('col-md-offset-2');
+      $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
+    }
+    if($('.artisteMore .col-md-4').hasClass('col-md-offset-8')){
+      $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
+      $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
+    }
+    if(!$('.artisteMore .col-md-4').hasClass('col-md-offset-8') && !$('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
+      $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
+      $('.artisteMore .col-md-8').addClass('col-md-offset-4');
+    }
+  });*/
+  /*
+  $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
+  $('.artisteMore .col-md-8').addClass('col-md-offset-4');
 
+  $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
+  $('.artisteMore .col-md-8').addClass('col-md-offset-2');
+
+  $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
+  $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
+*/
 });

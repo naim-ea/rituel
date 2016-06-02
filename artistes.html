@@ -15,19 +15,25 @@
     <link rel="stylesheet" href="styles/hamburgler.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <script src="scripts/jquery-1.12.1.min.js"></script>
-    <script src="http://w.soundcloud.com/player/api.js"></script>
-    <script>
-      $(document).ready(function() {
-        var widget = SC.Widget(document.getElementById('soundcloud_widget'));
-        widget.bind(SC.Widget.Events.READY, function() {
-          console.log('Ready...');
-        });
-        $('.layerBackground, .closeButton').click(function() {
-          widget.pause();
-        });
-      });
-    </script>
   </head>
   <body id="bodyArtistes">
     <div class="loadAnimation"></div>
@@ -77,50 +83,13 @@
         </header>
       </div>
       <div class="row">
-        <div class="layerBackground col-md-12"></div>
-        <div class="layerActiveArtiste">
-          <div class="layerRelative">
-            <div>
-              <img src="images/artistes/salahe.jpg" alt="artiste photo">
-            </div>
-            <div class="closeButton">
-              +
-            </div>
-            <div class="artisteSocial">
-              <span class="fa fa-stack">
-                <i class="fa fa-square fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x"></i>
-              </span>
-              <span class="fa fa-stack">
-                <i class="fa fa-square fa-stack-2x"></i>
-                <i class="fa fa-soundcloud fa-stack-1x"></i>
-              </span>
-            </div>
-            <div class="artisteTitle">
-              <h4>Birds of mind</h4>
-              <h5>Techno</h5>
-            </div>
-            <div class="artisteDescribe">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita praesentium nam sed quod quae perferendis harum exercitationem, natus ad libero consequuntur quibusdam, vitae nostrum illum non enim! Corrupti, itaque!
-              </p>
-              <iframe id="soundcloud_widget"
-                      src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/258990131&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d"
-                      width="100%"
-                      height="110"
-                      frameborder="no"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
         <section id="artistes">
           <div class="col-md-12 title">
             <h1>Nos &nbsp;artistes</h1>
             <div class="barre"></div>
           </div>
-          <div class="col-md-4">
-            <div class="col-md-8 col-md-offset-4 artisteContainer">
+          <div class="col-md-4 no-gutter">
+            <div class="col-md-8 col-md-offset-4 artisteContainer col1">
               <div class="artistesImgContainer">
                 <img src="images/artistes/davidmears.jpg" alt=" photo de David Mears"/>
               </div>
@@ -131,8 +100,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="col-md-8 col-md-offset-2 artisteContainer">
+          <div class="col-md-4 no-gutter">
+            <div class="col-md-8 col-md-offset-2 artisteContainer col2">
               <div class="artistesImgContainer">
                 <img src="images/artistes/minds.jpg" alt=" photo de Birds of minds"/>
               </div>
@@ -143,8 +112,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="col-md-8 artisteContainer">
+          <div class="col-md-4 no-gutter">
+            <div class="col-md-8 artisteContainer col3">
               <div class="artistesImgContainer">
                 <img src="images/artistes/salahe.jpg" alt=" photo de Nato & Sahalé"/>
               </div>
@@ -155,8 +124,15 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 marginTop">
-            <div class="col-md-8 col-md-offset-4 artisteContainer">
+          <div class="col-md-12 artisteMore">
+            <div class="col-md-4 col-md-offset-4">
+              <div class="col-md-8">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 no-gutter marginTop">
+            <div class="col-md-8 col-md-offset-4 artisteContainer col1">
               <div class="artistesImgContainer">
                 <img src="images/artistes/samarcande.jpg" alt=" photo de Samarcande"/>
               </div>
@@ -167,7 +143,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 marginTop">
+          <div class="col-md-4 no-gutter marginTop">
             <div class="col-md-8 col-md-offset-2 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/silens.jpg" alt=" photo de Silens"/>
@@ -179,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 marginTop">
+          <div class="col-md-4 no-gutter marginTop">
             <div class="col-md-8 artisteContainer">
               <div class="artistesImgContainer">
                 <img src="images/artistes/victornorman.jpg" alt=" photo de Victor Norman"/>
@@ -212,6 +188,7 @@
     <script src="scripts/jquery-ui.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/parallax.min.js"></script>
+    <script src="data/data.json"></script>
     <script src="scripts/main.js"></script>
   </body>
 

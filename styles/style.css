@@ -609,7 +609,6 @@ a:hover {
   font-size: 40px;
 }
 
-
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -1204,15 +1203,16 @@ iframe {
   overflow: auto;
 }
 
-#artistes .col-md-4 {
+#artistes .col-md-4.no-gutter {
   height: 400px;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
   transition: all 0.2s linear;
 }
 
 #artistes .col-md-4.marginTop{
   height: 400px;
-  margin-top: 60px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   transition: all 0.2s linear;
 }
 
@@ -1299,6 +1299,35 @@ iframe {
   bottom: 30px;
   left: 20px;
   font-family: 'Raleway', sans-serif;
+}
+
+.artisteMore{
+  height: 400px;
+  background: #1D1D1D;
+  padding: 0;
+}
+
+.artisteMore .fa-caret-down{
+  color: #eeedf3;
+  margin: 0  auto;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 10px;
+  font-size: 80px;
+  z-index: 10000;
+}
+
+.artisteMore .col-md-4{
+  transition: all 0.5s linear;
+  background: red;
+  position: relative;
+}
+
+.artisteMore .col-md-4 .col-md-8{
+  margin: auto;
+  width: 100%;
+  background: green;
 }
 
 
