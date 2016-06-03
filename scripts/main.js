@@ -136,12 +136,15 @@ $(document).ready(function () {
     document.onkeydown = null;  
   }
 */
+  //CHANGER LE DESTINATAIRE DE L'EMAIL
   $(".custom-options").on("click", function(){
     if($(".custom-select-trigger").html()==("Birds of Mind")){
       $("select").attr("value", "1");
     }
   })
 
+  
+  
   $('.NextEventName').html(nextEvent["nom"]);
   $('.NextEventLieu').html(nextEvent["lieu"]);
   $('.NextEventDate').html(nextEvent["date"]);
