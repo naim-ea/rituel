@@ -20,8 +20,8 @@ else
 {
     session_start();
     $_SESSION['id'] = $resultat['id'];
-    $_SESSION['pseudo'] = $pseudo;
+    $_SESSION['pseudo'] = $_POST['pseudo'];
     echo 'Vous êtes connecté !';?>
-<html><form method="post" action="deco.php"><button type="submit">Déconnexion</button></form></html>
+<html><form method="post" action="deco.php"><button type="submit">Déconnexion</button></form><form method="post" action="modif.php"><button type="submit">Modification</button></form></html>
     <?php
 }?>

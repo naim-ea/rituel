@@ -2,7 +2,7 @@
   session_start();
 
   if (!isset($_SESSION['pseudo'])) {
-    header ('Location: ../login');
+    header ('Location: connexion.php');
     exit();
   }
 ?>
