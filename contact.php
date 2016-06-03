@@ -5,7 +5,7 @@ session_start();?>
 
   <head>
     <meta charset="utf-8">
-    <title>RITUEL | HOME</title>
+    <title>Rituel | Contact</title>
     <meta name="description" content="site du label Rituel" />
     <meta name="keywords" content="label,musique,zazie,rituel,evenement,paris,soiree,beyondthedoors" />
     <meta name="author" content="HETIC" />

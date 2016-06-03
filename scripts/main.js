@@ -8,16 +8,20 @@ $(document).ready(function () {
 
   // HAMBURGLERv2
 
-  $(document).ready(function () {
-    $(".icon").click(function () {
-      $(".mobilenav").fadeToggle(500);
-      $(".top-menu").toggleClass("top-animate");
-      $(".mid-menu").toggleClass("mid-animate");
-      $(".bottom-menu").toggleClass("bottom-animate"); $('#header').toggleClass('backgroundDark');
-    });
+  $(".icon").click(function () {
+    $(".mobilenav").fadeToggle(500);
+    $(".top-menu").toggleClass("top-animate");
+    $(".mid-menu").toggleClass("mid-animate");
+    $(".bottom-menu").toggleClass("bottom-animate"); $('#header').toggleClass('backgroundDark');
   });
 
-
+  $(".icon").click(function(){
+    $(".mobilenav").fadeToggle(500);
+    $(".top-menu").toggleClass("top-animate");
+    $(".mid-menu").toggleClass("mid-animate");
+    $(".bottom-menu").toggleClass("bottom-animate");
+    $('#header').toggleClass('backgroundDark');
+  });
 
   //SELECT CUSTOMISÉ SUR LA PAGE CONTACT
   $(".custom-select").each(function () {
@@ -150,51 +154,87 @@ $(document).ready(function () {
   };
 
   $('.artisteMore').hide();
-
+  var currentArtiste = 0;
+  var targetArtiste = 0;
+  
   $('.artisteContainer').on('click', function(){
-    $('.artisteMore').slideDown();
+
     if($(this).hasClass('col1')){
       $('.artisteMore .col-md-4').removeClass('col-md-offset-4');
       $('.artisteMore .col-md-4').removeClass('col-md-offset-8');
-      
+      targetArtiste = 1;
     }
 
-    if($(this).hasClass('col2')){
+    else if($(this).hasClass('col2')){
       $('.artisteMore .col-md-4').removeClass('col-md-offset-8');
       $('.artisteMore .col-md-4').addClass('col-md-offset-4');
-      
+      targetArtiste = 2;
     }
 
-    if($(this).hasClass('col3')){
+    else if($(this).hasClass('col3')){
       $('.artisteMore .col-md-4').removeClass('col-md-offset-4');
       $('.artisteMore .col-md-4').addClass('col-md-offset-8');
-      
+      targetArtiste = 3;
     }
-    
+
+    if (currentArtiste == targetArtiste){
+      $('.artisteMore').slideUp();
+      currentArtiste = 0;
+      targetArtiste = 0;
+      console.log($(this).data('target'));
+      console.log(currentArtiste);
+    }
+    else{
+      $('.artisteMore').slideDown();
+      currentArtiste = targetArtiste;
+    }
+
     setTimeout(function(){
+      if($('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
+        $('.artisteMore .col-md-8').addClass('col-md-offset-2');
+        $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
+      }
+      else if($('.artisteMore .col-md-4').hasClass('col-md-offset-8')){
+        $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
+        $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
+      }
+      else if(!$('.artisteMore .col-md-4').hasClass('col-md-offset-8') && !$('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
+        $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
+        $('.artisteMore .col-md-8').addClass('col-md-offset-4');
+      }
+    }, 200);
     
-    if($('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
-      $('.artisteMore .col-md-8').addClass('col-md-offset-2');
-      $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
-    }
-    if($('.artisteMore .col-md-4').hasClass('col-md-offset-8')){
-      $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
-      $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
-    }
-    if(!$('.artisteMore .col-md-4').hasClass('col-md-offset-8') && !$('.artisteMore .col-md-4').hasClass('col-md-offset-4')){
-      $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
-      $('.artisteMore .col-md-8').addClass('col-md-offset-4');
-    }
-      }, 200);
+    var moreName = $(this).children('.artisteDescribe').children('h3').html();
+    var moreImg = $(this).children('.artistesImgContainer').children('img').attr('src');
+    $('.moreName').html(moreName);
+    $('.moreImg').attr('src', moreImg);
+    
   });
-  /*
-  $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
-  $('.artisteMore .col-md-8').addClass('col-md-offset-4');
 
-  $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
-  $('.artisteMore .col-md-8').addClass('col-md-offset-2');
-
-  $('.artisteMore .col-md-8').removeClass('col-md-offset-4');
-  $('.artisteMore .col-md-8').removeClass('col-md-offset-2');
-*/
+  $('#headerMobile').hide();
+  $('.icon').on('click', function(){
+    $('#headerMobile').slideToggle();
+  });
+  
+  $('.artistesImg .col-md-4').on('mouseenter', function(){
+    $(this).addClass('ImgActive');
+  });
+  
+  $('.artistesImg .col-md-4').on('mouseleave', function(){
+    $(this).removeClass('ImgActive');
+  });
+  
+  $('#artisteButton').on('mouseenter', function(){
+    $('.artistesImg .col-md-4').addClass('ImgActive');
+  });
+  
+   $('#artisteButton').on('mouseleave', function(){
+    $('.artistesImg .col-md-4').removeClass('ImgActive');
+  });
+  
 });
+
+
+
+
+
