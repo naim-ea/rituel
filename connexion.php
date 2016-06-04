@@ -17,12 +17,15 @@
     <link rel="stylesheet" href="styles/style.css"/>
   </head>
   <body id="bodyConnexion">
-    <h2 class="h2Connexion">IRJRIIEIJ</h2>
     <form method="post" action="connect.php">
-      <input type="text" name="pseudo" placeholder="Pseudo">
+      <div>
+        <h2 class="title">rituel</h2>
+        <div class="barre"></div>
+        <h3>Connexion</h3>
+      </div>
+      <input type="text" name="pseudo" placeholder="Identifiant">
       <input type="password" name="pass" placeholder="Mot de passe">
-      <input type="checkbox"> <label>Connexion automatique</label>
-      <button type="submit">Se connecter</button>
+      <button type="submit">Se &nbsp;connecter</button>
     </form>
     <script src="scripts/jquery-1.12.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
