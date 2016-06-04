@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/hamburgler.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="favicon-96x96.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/jquery-1.12.1.min.js"></script>
   </head>
@@ -72,7 +72,7 @@
             <div class="barre"></div>
           </div>
           <div class="col-md-4 no-gutter">
-            <div class="col-md-8 col-md-offset-4 artisteContainer col1" data-target="1">
+            <div class="col-md-8 col-md-offset-4 artisteContainer col1" data-target="1" data-scroll="#More1">
               <div class="artistesImgContainer">
                 <img src="images/artistes/davidmears.jpg" alt=" photo de David Mears"/>
               </div>
@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="col-md-4 no-gutter">
-            <div class="col-md-8 col-md-offset-2 artisteContainer col2" data-target="2">
+            <div class="col-md-8 col-md-offset-2 artisteContainer col2" data-target="2" data-scroll="#More1">
               <div class="artistesImgContainer">
                 <img src="images/artistes/minds.jpg" alt=" photo de Birds of minds"/>
               </div>
@@ -96,7 +96,7 @@
             </div>
           </div>
           <div class="col-md-4 no-gutter">
-            <div class="col-md-8 artisteContainer col3" data-target="3">
+            <div class="col-md-8 artisteContainer col3" data-target="3" data-scroll="#More1">
               <div class="artistesImgContainer">
                 <img src="images/artistes/salahe.jpg" alt=" photo de Nato & Sahalé"/>
               </div>
@@ -107,7 +107,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 artisteMore">
+          <div class="col-md-12 artisteMore More1" id="More1">
             <div class="row">
               <div class="col-md-4">
                 <div class="col-md-8 col-md-offset-4">
@@ -137,13 +137,17 @@
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eius eveniet ab inventore reiciendis in tenetur optio, excepturi dolores neque molestias labore obcaecati quo id, rerum odit dolorum pariatur sed.
                 </p>
                 <div class="col-md-12">
-                  <iframe width="100%" height="105" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34019569&amp;color=1D1D1D"></iframe>
+                  <iframe id="soundcloud_widget"
+                      src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/258990131&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d"
+                      width="100%"
+                      height="110"
+                      frameborder="no"></iframe>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 no-gutter marginTop">
-            <div class="col-md-8 col-md-offset-4 artisteContainer col1">
+            <div class="col-md-8 col-md-offset-4 artisteContainer col4" data-target="4" data-scroll="#More2">
               <div class="artistesImgContainer">
                 <img src="images/artistes/samarcande.jpg" alt=" photo de Samarcande"/>
               </div>
@@ -155,7 +159,7 @@
             </div>
           </div>
           <div class="col-md-4 no-gutter marginTop">
-            <div class="col-md-8 col-md-offset-2 artisteContainer">
+            <div class="col-md-8 col-md-offset-2 artisteContainer col5" data-target="5" data-scroll="#More2">
               <div class="artistesImgContainer">
                 <img src="images/artistes/silens.jpg" alt=" photo de Silens"/>
               </div>
@@ -167,7 +171,7 @@
             </div>
           </div>
           <div class="col-md-4 no-gutter marginTop">
-            <div class="col-md-8 artisteContainer">
+            <div class="col-md-8 artisteContainer col6" data-target="6" data-scroll="#More2">
               <div class="artistesImgContainer">
                 <img src="images/artistes/victornorman.jpg" alt=" photo de Victor Norman"/>
               </div>
@@ -175,6 +179,45 @@
               <div class="artisteDescribe">
                 <h3>Victor Norman</h3>
                 <p>Techno</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 artisteMore More2" id="More2">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="col-md-8 col-md-offset-4">
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-md-offset-2">
+                <img class="moreImg" src="images/artistes/minds.jpg" alt="artiste image"/>
+              </div>
+              <div class="col-md-5">
+                <h2 class="col-md-6 moreName">Birds of minds</h2>
+                <div class="col-md-6">
+                  <a href="#" title="Booking">Booking</a>
+                  <a href="#" title="Booking">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#" title="Booking">
+                    <i class="fa fa-soundcloud"></i>
+                  </a>
+                </div>
+                <p class="col-md-12" >
+                  Techno
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eius eveniet ab inventore reiciendis in tenetur optio, excepturi dolores neque molestias labore obcaecati quo id, rerum odit dolorum pariatur sed.
+                </p>
+                <div class="col-md-12">
+                  <iframe id="soundcloud_widget"
+                      src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/258990131&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d"
+                      width="100%"
+                      height="110"
+                      frameborder="no"></iframe>
+                </div>
               </div>
             </div>
           </div>

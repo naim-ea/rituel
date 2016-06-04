@@ -537,7 +537,18 @@ a:hover {
   height: auto;
   padding: 0;
   -webkit-filter: opacity(25%);
-filter: opacity(25%);
+  filter: opacity(25%);
+}
+
+.artistesImg .col-md-4 h4{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  color: #F0F0F0;
+  position: absolute;
+  margin-top: 100px;
+  font-size: 20px;
+  background: red;
 }
 
 .artistesImg .col-md-4.ImgActive img {
@@ -825,7 +836,7 @@ filter: opacity(25%);
   margin-top: 75px;
 }
 
-form {
+#bodyContact form {
   padding-top: 30px;
   background-color: white;
   border-radius: 5px;
@@ -839,12 +850,12 @@ form {
   width: 90%;
 }
 
-label {
+#bodyContact label {
   font-size: 20px;
 }
 
 @media only screen and (max-width: 780px) {
-  form {
+  #bodyContact form {
     height: 650px;
   }
 }
@@ -976,8 +987,8 @@ label {
   background: #f9f9f9;
 }
 
-input,
-textarea {
+#bodyContact input,
+#bodyContact textarea {
   background-color: #4A4A4A;
   border-radius: 5px;
   margin-top: 35px;
@@ -987,29 +998,29 @@ textarea {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-input {
+#bodyContact input {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-textarea {
+#bodyContact textarea {
   height: 150px;
   resize: none;
 }
 
-input:-moz-placeholder,
-textarea:-moz-placeholder {
+#bodyContact input:-moz-placeholder,
+#bodyContact textarea:-moz-placeholder {
   color: white;
   font-family: "Raleway";
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+#bodyContact input::-webkit-input-placeholder,
+#bodyContact textarea::-webkit-input-placeholder {
   color: white;
   font-family: "Raleway";
 }
 
-button {
+#bodyContact button {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #4A4A4A;
@@ -1027,83 +1038,6 @@ button {
 
 
 /*    Artistes   */
-
-.layerBackground {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-}
-
-.layerActiveArtiste {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -250px;
-  margin-left: -300px;
-  width: 600px;
-  height: 500px;
-  background: #1D1D1D;
-  z-index: 1100;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-layerRelative {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.layerActiveArtiste > div {
-  top: 0;
-  left: 0;
-}
-
-.layerActiveArtiste > div img {
-  width: 100%;
-}
-
-.closeButton {
-  color: #1D1D1D;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 25px;
-  height: 25px;
-  line-height: 18px;
-  text-align: center;
-  font-size: 36px;
-  font-weight: bolder;
-  transform: rotate(45deg);
-  cursor: pointer;
-  background: #F0F0F0;
-}
-
-.artisteSocial {
-  position: absolute;
-  top: 200px;
-  right: 15px;
-  font-size: 16px;
-}
-
-.artisteSocial span {
-  margin: 0 5px;
-}
-
-.artisteSocial .fa-square {
-  color: #F0F0F0;
-}
-
-.artisteSocial .fa-facebook {
-  color: #1D1D1D;
-}
-
-fa-soundcloud {
-  color: #1D1D1D;
-}
 
 .artisteTitle {
   position: absolute;
@@ -1171,7 +1105,7 @@ iframe {
 #artistes .col-md-4.marginTop{
   height: 400px;
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   transition: all 0.2s linear;
 }
 
@@ -1674,4 +1608,27 @@ video {
     width: 150px;
     margin: auto;
   }
+}
+
+/********************************************************************************************************
+
+
+CONNEXION
+
+/*******************************************************************************************************/
+
+#bodyConnexion{
+  background: linear-gradient(to top left, #19AAB8, #73C8A9);
+}
+
+#bodyConnexion form{
+  width: 400px;
+  height: 600px;
+  background: red;
+}
+
+.h2Connexion{
+  background: red;
+  width: 300px;
+  height: 60px;
 }
