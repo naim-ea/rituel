@@ -845,8 +845,8 @@ a:hover {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin: 100px auto;
   margin-top:50px;
+  margin-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
   font-family: "Raleway";
@@ -1037,6 +1037,10 @@ a:hover {
   font-size: 30px;
 }
 
+#contactImg{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 /*  ////////////       ARTISTES      //////////// */
 
