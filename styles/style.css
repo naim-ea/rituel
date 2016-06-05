@@ -824,12 +824,16 @@ a:hover {
 /*  ////////////       CONTACT       //////////// */
 
 #bodyContact {
-  background: linear-gradient(to top left, #19AAB8, #73C8A9) 100% 100%;
+  background: #eeedf3;
 }
 
 #bodyContact #header {
   background: #1D1D1D;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#contactus{
+  margin-top: 100px;
 }
 
 .alert {
@@ -842,7 +846,7 @@ a:hover {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   margin: 100px auto;
-  margin-top: 200px;
+  margin-top:50px;
   padding-left: 0;
   padding-right: 0;
   font-family: "Raleway";

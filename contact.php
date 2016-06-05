@@ -37,7 +37,7 @@ session_start();?>
               </ul>
             </nav>
           </div>
-          <div class="visible-xs visible-sm">
+          <div class="visible-xs">
             <a href="javascript:void(0)" class="icon">
               <div class="hamburger">
                 <div class="menui top-menu"></div>
@@ -60,7 +60,8 @@ session_start();?>
           </div>
         </header>
       </div>
-      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <h1 id="contactus">Nous contacter</h1>
 
         <?php if(array_key_exists('errors', $_SESSION)): ?>
         <div class="alert alert-danger">
