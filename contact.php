@@ -60,9 +60,11 @@ session_start();?>
           </div>
         </header>
       </div>
+      <div class="col-md-12 title">
+          <h1>Nous &nbsp; contacter</h1>
+          <div class="barre"></div>
+        </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <h1 id="contactus">Nous contacter</h1>
-
         <?php if(array_key_exists('errors', $_SESSION)): ?>
         <div class="alert alert-danger">
           <?= implode('<br>', $_SESSION['errors']); ?>

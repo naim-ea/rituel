@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  var nbrArtiste = 0;
+  
+  var nbrArtiste = Object.keys(eventList).length;
+  
+  
   $('#addArtiste').on('click', function(e){
     e.preventDefault();
     nbrArtiste++;
