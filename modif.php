@@ -60,33 +60,21 @@ if (!isset($_SESSION['pseudo'])) {
           </form>
           <h2>Line Up</h2>
           <div></div>
-          <a href="#" title="remove artiste"> - </a>
+          <a href="#" title="remove artiste" id="removeArtiste"> - </a>
           <p>Artistes</p>
-          <a href="#" title="add artiste"> + </a>
+          <a href="#" title="add artiste" id="addArtiste"> + </a>
           <form action="#" method="post" id="nextEventLineUp">
-            <p>
-              <label id="Artiste_1">Artiste_1</label>
-              <input type="text" name="Artiste_1" placeholder="Artiste_1">
-            </p>
+            
           </form>
           <h2>évenements</h2>
           <div></div>
-          <a href="#" title="remove event"> - </a>
+          <a href="#" title="remove event" id="removeEvent"> - </a>
           <p>Evenements</p>
-          <a href="#" title="add event"> + </a>
+          <a href="#" title="add event" id="addEvent"> + </a>
           <form action="#" method="post" id="nextEventList">
-            <p class="ArtisteModif">
-              <label id="event_1">Event_1</label>
-              <input type="text" name="Artiste_1_Nom" placeholder="Artiste_1_Nom">
-              <input type="text" name="Artiste_1_Lieu" placeholder="Artiste_1_Lieu">
-              <input type="text" name="Artiste_1_Date" placeholder="Artiste_1_Date">
-              <input type="text" name="Artiste_1_LineUp" placeholder="Artiste_1_LineUp">
-              <input type="text" name="Artiste_1_LienFB" placeholder="Artiste_1_LienFB">
-            </p>
+            
           </form>
-
-
-
+          
           <form action="domodifs.php" method="post">
             <input value="prout" name="jsonString">
             <button type="submit">Appliquer</button>
@@ -99,6 +87,8 @@ if (!isset($_SESSION['pseudo'])) {
     <script src="scripts/parallax.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="data/data.json"></script>
+    <script src="data/modifData.json"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/modif.js"></script>
   </body>
 </html>
