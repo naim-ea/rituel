@@ -1924,6 +1924,10 @@ PAGE MODIFICATION
   transition: all 0.1s linear;
 }
 
+#bodyModif #submitForm input[type=text]{
+  display: none;
+}
+
 #bodyModif button:hover{
   background: #EFEFF2;
   color: #1D1D1D;

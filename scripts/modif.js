@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   initialisationt();
 
-  
+
   //LIMITER TEXTE DANS DESCRIPTION EVENT
   $('#countMe').keydown(function(e) {
     newLines = $(this).val().split("\n").length;
@@ -40,9 +40,9 @@ $(document).ready(function(){
     $('#modifNextEvent input[name=LienFB]').val(nextEvent["lienFB"]);
 
   }
-  
-  
-    // AJOUTER o/ ENLEVER DES ARTISTES 
+
+
+  // AJOUTER o/ ENLEVER DES ARTISTES 
   $('#addArtiste').on('click', function(e){
     e.preventDefault();
     nbrArtiste++;
@@ -58,8 +58,8 @@ $(document).ready(function(){
       nbrArtiste--;
     }
   });
-  
-  
+
+
   // AJOUTER o/ ENLEVER DES EVENEMENTS
   $('#addEvent').on('click', function(e){
     e.preventDefault();
@@ -107,15 +107,15 @@ $(document).ready(function(){
 
     new_data += '}'; 
   }
-  
+
   $('#submitForm').submit( function(ev) {
-     ev.preventDefault();
-     create_new_data();
-    console.log(new_data + 'SUBMIT NOW');
-     $(this).unbind('submit').submit()
-});
-  
-  
+    ev.preventDefault();
+    create_new_data();
+    $('#submitForm input[type=text]').val(new_data);
+    $(this).unbind('submit').submit()
+  });
+
+
 
 
 

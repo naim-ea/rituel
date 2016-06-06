@@ -76,6 +76,7 @@ if (!isset($_SESSION['pseudo'])) {
           </form>
           
           <form action="domodifs.php" method="post" id="submitForm">
+            <input type="text" name="new_data"></input>
             <button type="submit">Appliquer</button>
           </form>
         </div>
