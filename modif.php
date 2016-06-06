@@ -72,11 +72,12 @@ if (!isset($_SESSION['pseudo'])) {
           <p>Evenements</p>
           <a href="#" title="add event" id="addEvent"> + </a>
           <form action="#" method="post" id="nextEventList">
-
           </form>
 
           <form action="domodifs.php" method="post" id="submitForm">
-            <input type="text" name="new_data"/>
+            <input type="text" name="new_data_Event"/>
+            <input type="text" name="new_data_Artiste"/>
+            <input type="text" name="new_data_EventList"/>
           <button type="submit">Appliquer</button>
           </form>
         <form method="post" action="deco.php" id="decoForm">

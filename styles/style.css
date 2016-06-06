@@ -1821,12 +1821,12 @@ PAGE MODIFICATION
 
 /*******************************************************************************************************/
 
-#bodyModif{
+#bodyModif, #bodyModifSuccess{
   background: #EFEFF2 ;
   font-family: "Raleway", sans-serif;
 }
 
-#bodyModif .title{
+#bodyModif .title, #bodyModifSuccess .title{
   margin: 0;
   background: #1D1D1D;
   color: #EFEFF2;
@@ -1866,7 +1866,7 @@ PAGE MODIFICATION
   width: 16.5%;
 }
 
-#bodyModif h2{
+#bodyModif h2, bodyModifSuccess h2{
   font-family: "Bebas neue", sans-serif;
   font-size: 40px;
   width: 30%;
@@ -1933,21 +1933,47 @@ PAGE MODIFICATION
   display: none;
 }
 
-#bodyModif button:hover{
+#bodyModif #submitForm button:hover{
   background: #EFEFF2;
   color: #1D1D1D;
   border: 1px solid #1D1D1D;
 }
 
-#bodyModif #decoForm button{
+#bodyModif #decoForm button, #bodyModifSuccess #decoForm button{
   position: fixed;
   right: 20px;
   top: 20px;
 }
 
+#bodyModifSuccess h2{
+  width: 100%;
+  text-align: center;
+  font-family: "Bebas neue", sans-serif;
+  font-size: 64px;
+  margin-top: 200px;
+}
 
+#bodyModifSuccess #backModif button{
+  height: 60px;
+  width: 30%;
+  background: #1D1D1D;
+  color: #F0F0F0;
+  border: 1px solid #1D1D1D;
+  border-radius: 4px;
+  margin: 50px auto;
+  display: block;
+  transition: all 0.1s linear;
+}
 
+#bodyModifSuccess #backModif button:hover{
+  background: #F0F0F0;
+  color: #1D1D1D;
+}
 
+#bodyModifSuccess #backModif button i{
+  margin-right:20px;
+  font-weight: bolder;
+}
 
 
 

@@ -3,7 +3,9 @@ $(document).ready(function(){
   var lines = 5;
   var nbrArtiste = Object.keys(lineUp).length;
   var nbrEvent = Object.keys(eventList).length;
-  var new_data = "";
+  var new_data_Event = "";
+  var new_data_Artiste = "";
+  var new_data_EventList = "";
 
   initialisationt();
 
@@ -85,33 +87,35 @@ $(document).ready(function(){
 
 
   function create_new_data(){
-    new_data = 'var nextEvent = {"nom":"' + $("#modifNextEvent input[name=Nom]").val() + '", "lieu":"' + $("#modifNextEvent input[name=Lieu]").val() + '", "date":"' + $("#modifNextEvent input[name=Date]").val() + '", "description":"' + $("#modifNextEvent textarea[name=Description]").val() + '", "lienFB":"' + $("#modifNextEvent input[name=LienFB]").val() + '",}';
+    new_data_Event = 'var nextEvent={"nom":"' + $("#modifNextEvent input[name=Nom]").val() + '","lieu":"' + $("#modifNextEvent input[name=Lieu]").val() + '","date":"' + $("#modifNextEvent input[name=Date]").val() + '","description":"' + $("#modifNextEvent textarea[name=Description]").val() + '","lienFB":"' + $("#modifNextEvent input[name=LienFB]").val() + '",}';
 
-    new_data += 'var lineUp = {';
+    new_data_Artiste += 'var lineUp={';
 
     for(var i = 1 ; i < nbrArtiste+1 ; i++){
-      new_data += '"artiste_'+i +'":"'+ $('#artiste_'+i).val() +'"';
+      new_data_Artiste += '"artiste_'+i +'":"'+ $('#artiste_'+i).val() +'",';
     }
 
-    new_data += ',}';
+    new_data_Artiste += '}';
 
-    new_data += 'var eventList = {';
+    new_data_EventList += 'var eventList={';
 
     for (var j = 1; j < nbrEvent+1 ; j++){
-      new_data += '"event_'+ j +'": {'
+      new_data_EventList += '"event_'+j+'":{'
 
-      new_data += '"nom":"' + $("#nextEventList input[name=Event_"+j+"_Nom]").val() + '",lieu":"' + $("#nextEventList input[name=Event_"+j+"_Lieu]").val() + '",date":"' + $("#nextEventList input[name=Event_"+j+"_Date]").val() + '", "smallLineUp":"' + $("#nextEventList input[name=Event_"+j+"_LineUp]").val() + '", "lienFB":"' + $("#nextEventList input[name=Event_"+j+"_LienFB]").val() + '",';
+      new_data_EventList += '"nom":"'+ $("#nextEventList input[name=Event_"+j+"_Nom]").val()+'","lieu":"'+$("#nextEventList input[name=Event_"+j+"_Lieu]").val()+'","date":"'+$("#nextEventList input[name=Event_"+j+"_Date]").val()+'","smallLineUp":"'+$("#nextEventList input[name=Event_"+j+"_LineUp]").val()+'","lienFB":"'+$("#nextEventList input[name=Event_"+j+"_LienFB]").val()+'",';
 
-      new_data+= '},';
+      new_data_EventList+= '},';
     }
 
-    new_data += '}'; 
+    new_data_EventList += '}'; 
   }
 
   $('#submitForm').submit( function(ev) {
     ev.preventDefault();
     create_new_data();
-    $('#submitForm input[type=text]').val(new_data);
+    $('#submitForm input[name=new_data_Event]').val(new_data_Event);
+    $('#submitForm input[name=new_data_Artiste]').val(new_data_Artiste);
+    $('#submitForm input[name=new_data_EventList]').val(new_data_EventList);
     $(this).unbind('submit').submit()
   });
 
