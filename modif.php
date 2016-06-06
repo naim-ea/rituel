@@ -64,7 +64,7 @@ if (!isset($_SESSION['pseudo'])) {
           <p>Artistes</p>
           <a href="#" title="add artiste" id="addArtiste"> + </a>
           <form action="#" method="post" id="nextEventLineUp">
-            
+
           </form>
           <h2>évenements</h2>
           <div></div>
@@ -72,23 +72,26 @@ if (!isset($_SESSION['pseudo'])) {
           <p>Evenements</p>
           <a href="#" title="add event" id="addEvent"> + </a>
           <form action="#" method="post" id="nextEventList">
-            
+
           </form>
-          
+
           <form action="domodifs.php" method="post" id="submitForm">
-            <input type="text" name="new_data"></input>
-            <button type="submit">Appliquer</button>
+            <input type="text" name="new_data"/>
+          <button type="submit">Appliquer</button>
           </form>
-        </div>
+        <form method="post" action="deco.php" id="decoForm">
+          <button type="submit">Déconnexion</button>
+        </form>
       </div>
     </div>
-    <!-- SCRIPTS -->
-    <script src="scripts/jquery-1.12.1.min.js"></script>
-    <script src="scripts/parallax.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="data/data.json"></script>
-    <script src="data/modifData.json"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/modif.js"></script>
+    </div>
+  <!-- SCRIPTS -->
+  <script src="scripts/jquery-1.12.1.min.js"></script>
+  <script src="scripts/parallax.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="data/data.json"></script>
+  <script src="data/modifData.json"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/modif.js"></script>
   </body>
 </html>

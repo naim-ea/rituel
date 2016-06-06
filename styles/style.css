@@ -1781,10 +1781,15 @@ font-family: "Raleway";
   font-family: "Raleway", sans-serif;
 }
 
-#bodyConnect form + form button{
+#bodyConnect form + form button, #decoForm button {
   background: rgba(239, 72, 54, 0.4);
   border: 2px solid rgba(239, 72, 54, 0.2);
   height: 40px;
+  padding: 10px;
+  border-radius: 4Px;
+  font-size: 16px;
+  color: #F0F0F0;
+  line-height: 20px;
 }
 
 #bodyConnect  a div{
@@ -1912,7 +1917,7 @@ PAGE MODIFICATION
   font-family: "Helvetica", sans-serif;
 }
 
-#bodyModif button{
+#bodyModif #submitForm button{
   width: 20%;
   height: 40px;
   margin: 50px auto;
@@ -1932,6 +1937,12 @@ PAGE MODIFICATION
   background: #EFEFF2;
   color: #1D1D1D;
   border: 1px solid #1D1D1D;
+}
+
+#bodyModif #decoForm button{
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
 
 
