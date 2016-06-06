@@ -51,7 +51,7 @@ if (!isset($_SESSION['pseudo'])) {
             </p>
             <p>
               <label id="Description">Description</label>
-              <input type="text" name="Description" placeholder="Description">
+              <textarea type="text" name="Description" placeholder="Description" rows="4" id="countMe"></textarea>
             </p>
             <p>
               <label id="LienFB">Lien FB</label>
@@ -75,8 +75,7 @@ if (!isset($_SESSION['pseudo'])) {
             
           </form>
           
-          <form action="domodifs.php" method="post">
-            <input value="prout" name="jsonString">
+          <form action="domodifs.php" method="post" id="submitForm">
             <button type="submit">Appliquer</button>
           </form>
         </div>

@@ -1367,7 +1367,8 @@ iframe {
   color: #F0F0F0;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  width: 100%;
+  width: 50%;
+  margin: auto;
   font-size: 90px;
   margin-top: 70px;
 }
@@ -1385,7 +1386,6 @@ iframe {
   width: 150px;
   height: 3px;
   background: #F0F0F0;
-  margin: 10px auto;
 }
 
 .firstDescribe p {
@@ -1394,7 +1394,7 @@ iframe {
   text-align: center;
   width: 100%;
   font-size: 30px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .firstDescribeNext {
@@ -1841,6 +1841,22 @@ PAGE MODIFICATION
   display: inline-block;
 }
 
+#bodyModif textarea{
+  padding: 5px;
+  outline: none;
+  margin: 0 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 20%;
+  display: inline-block;
+  resize: none;
+  overflow: hidden;
+}
+
+#bodyModif label#Description{
+  transform: translateY(-70px);
+}
+
 #bodyModif .EventModif input{
   width: 16.5%;
 }
@@ -1896,6 +1912,23 @@ PAGE MODIFICATION
   font-family: "Helvetica", sans-serif;
 }
 
+#bodyModif button{
+  width: 20%;
+  height: 40px;
+  margin: 50px auto;
+  background: #1D1D1D;
+  color: #EFEFF2;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  transition: all 0.1s linear;
+}
+
+#bodyModif button:hover{
+  background: #EFEFF2;
+  color: #1D1D1D;
+  border: 1px solid #1D1D1D;
+}
 
 
 
