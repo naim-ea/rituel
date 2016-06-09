@@ -1554,6 +1554,8 @@ video {
   background: #5c9cd8;
   border-radius: 4px;
   cursor: pointer;
+  width: 200px;
+  height: 30px;
 }
 
 .custom-select-trigger:after {

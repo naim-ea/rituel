@@ -79,7 +79,7 @@ session_start();?>
         <form action="send_mail.php" method="POST">
 
           <label for="sources" class="col-xs-4  col-xs-offset-1 col-sm-4  col-sm-offset-1 col-md-4  col-md-offset-1 col-lg-4 col-lg-offset-1">Destinataire</label>
-          <select name="dest" id="sources" class="custom-select sources col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Rituel">
+          <select name="dest" id="sources" class="custom-select sources col-xs-12 col-xs-offset-1 col-sm-12 col-sm-offset-1 col-md-12 col-md-offset-1 col-lg-12" placeholder="Rituel">
             <option value="0">Rituel</option>
             <option value="1">Birds of Mind</option>
             <option value="2">Silens</option>
