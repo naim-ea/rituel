@@ -174,8 +174,12 @@ $(document).ready(function () {
 
     var moreName = $(this).children('.artisteDescribe').children('h3').html();
     var moreImg = $(this).children('.artistesImgContainer').children('img').attr('src');
+    var moreDescribe = $(this).children('.artisteDescribe').children('.pDescribe').html();
+    console.log(moreDescribe);
     $('.moreName').html(moreName);
     $('.moreImg').attr('src', moreImg);
+    $('.moreDescribe').html(moreDescribe);
+    
 
   });
 

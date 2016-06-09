@@ -1001,6 +1001,10 @@ iframe {
   background: #fff;
 }
 
+.pDescribe{
+  display: none;
+}
+
 #artistes .artisteDescribe p {
   position: absolute;
   bottom: 30px;
