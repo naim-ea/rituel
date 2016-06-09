@@ -5,6 +5,8 @@ session_start();?>
 
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rituel | Contact</title>
     <meta name="description" content="site du label Rituel" />
     <meta name="keywords" content="label,musique,zazie,rituel,evenement,paris,soiree,beyondthedoors" />
@@ -53,7 +55,7 @@ session_start();?>
               <ul>
                 <li><a href="artistes.html" title="page artistes">artistes</a></li><!--
 --><li><a href="evenements.html" title="page evenements">evenements</a></li><!--
---><li><a href="#" title="page a propose">a propos</a></li><!--
+--><li><a href="about.html" title="page a propose">a propos</a></li><!--
 --><li><a href="contact.php" title="page contact">contact</a></li>
               </ul>
             </nav>
@@ -61,9 +63,9 @@ session_start();?>
         </header>
       </div>
       <div class="col-md-12 title">
-          <h1>Nous &nbsp; contacter</h1>
-          <div class="barre"></div>
-        </div>
+        <h1>Nous &nbsp; contacter</h1>
+        <div class="barre"></div>
+      </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <?php if(array_key_exists('errors', $_SESSION)): ?>
         <div class="alert alert-danger">
@@ -96,7 +98,7 @@ session_start();?>
           <button type="submit" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 submit">ENVOYER</button>
         </form>
       </div>
-        <img src="images/contactus.jpg" alt="Contactez-nous" id="contactImg" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <img src="images/contactus.jpg" alt="Contactez-nous" id="contactImg" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="row">
         <footer id="footer">
           <div class="col-md-4 col-md-offset-4">
