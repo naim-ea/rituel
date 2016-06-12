@@ -98,6 +98,8 @@ session_start();?>
           <button type="submit" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 submit">ENVOYER</button>
         </form>
       </div>
+
+
       <img src="images/contactus.jpg" alt="Contactez-nous" id="contactImg" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="row">
         <footer id="footer">
