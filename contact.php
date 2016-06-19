@@ -17,7 +17,7 @@ session_start();?>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="styles/hamburgler.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="favicon-96x96.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
