@@ -34,7 +34,7 @@ session_start();?>
               <ul>
                 <li><a href="artistes.html" title="page artistes"><div class="underline"></div>artistes</a></li><!--
 --><li><a href="evenements.html" title="page evenements"><div class="underline"></div>evenements</a></li><!--
---><li><a href="#" title="page a propose"><div class="underline"></div>a propos</a></li><!--
+--><li><a href="about.html" title="page a propose"><div class="underline"></div>a propos</a></li><!--
 --><li><a href="contact.php" title="page contact"><div class="underline"></div>contact</a></li>
               </ul>
             </nav>
