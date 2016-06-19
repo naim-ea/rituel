@@ -7,6 +7,7 @@
                                   GÉNÉRAL
 
 ***********************************************************************************************/
+
 @font-face {
   font-family: 'Bebas';
   src: url('Bebas.eot');
@@ -63,7 +64,7 @@
   background: transparent;
 }
 
-html{
+html {
   height: 100%;
 }
 
@@ -73,7 +74,6 @@ body {
   -webkit-user-select: none;
   user-select: none;
   cursor: default;
-
 }
 
 
@@ -235,6 +235,7 @@ a:hover {
   }
 }
 
+
 /*      FOOTER     */
 
 #footer {
@@ -351,7 +352,7 @@ a:hover {
   position: relative;
 }
 
-.cover{
+.cover {
   position: absolute;
   display: block;
   width: 100%;
@@ -359,7 +360,7 @@ a:hover {
   z-index: 1;
 }
 
-.cover img{
+.cover img {
   height: 100%;
   transform: translate(-50%, -50%);
 }
@@ -380,17 +381,19 @@ a:hover {
   z-index: 1000;
 }
 
+
 /* 2EME SECTION */
 
-#nextEvent .transition h1, .transition .barre{
+#nextEvent .transition h1,
+.transition .barre {
   transform: skewY(-2deg);
 }
 
-#nextEvent .transition h1{
+#nextEvent .transition h1 {
   margin-top: 35px;
 }
 
-#nextEvent .transition.title{
+#nextEvent .transition.title {
   height: 140px;
   margin-top: 0px;
 }
@@ -523,7 +526,7 @@ a:hover {
   position: relative;
 }
 
-#artisteHome .transition.title{
+#artisteHome .transition.title {
   z-index: 1000;
   height: 140px;
   margin-top: -40px;
@@ -554,7 +557,7 @@ a:hover {
   background: #000;
 }
 
-.artistesImg .col-md-4 div{
+.artistesImg .col-md-4 div {
   position: absolute;
 }
 
@@ -568,7 +571,7 @@ a:hover {
   filter: opacity(25%);
 }
 
-.artistesImg .col-md-4 h4{
+.artistesImg .col-md-4 h4 {
   width: 100%;
   height: 40px;
   font-size: 50px;
@@ -581,14 +584,14 @@ a:hover {
   transform: scale(0.6);
   opacity: 0;
   transition: all 0.4s linear;
-  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-.artistesImg .col-md-4.secondeRow h4{
+.artistesImg .col-md-4.secondeRow h4 {
   margin-top: -300px;
 }
 
-.artistesImg .col-md-4:hover h4{
+.artistesImg .col-md-4:hover h4 {
   transform: scale(1);
   opacity: 1;
 }
@@ -611,7 +614,7 @@ a:hover {
   padding: 0;
 }
 
-#artisteHome #artisteButton{
+#artisteHome #artisteButton {
   display: block;
   margin: auto;
   width: 80%;
@@ -629,8 +632,9 @@ a:hover {
   padding: 40px 0;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 40px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
@@ -715,6 +719,7 @@ a:hover {
   }
   .artisteHome {}
 }
+
 
 /* Small Devices, Tablets */
 
@@ -863,7 +868,6 @@ a:hover {
 @media only screen and (max-width: 320px) {}
 
 
-
 /***********************************************************************************************
 
                                         ARTISTES
@@ -933,7 +937,7 @@ iframe {
   transition: all 0.2s linear;
 }
 
-#artistes .col-md-4.marginTop{
+#artistes .col-md-4.marginTop {
   height: 400px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -964,7 +968,7 @@ iframe {
   height: auto;
 }
 
-.artisteContainer:hover .artistesTransition{
+.artisteContainer:hover .artistesTransition {
   transform: skewY(8deg) scaleX(1.3);
 }
 
@@ -1001,7 +1005,7 @@ iframe {
   background: #fff;
 }
 
-.pDescribe{
+.pDescribe {
   display: none;
 }
 
@@ -1012,15 +1016,15 @@ iframe {
   font-family: 'Raleway', sans-serif;
 }
 
-.artisteMore{
+.artisteMore {
   height: 400px;
   background: #1D1D1D;
   padding: 0;
 }
 
-.artisteMore .fa-caret-down{
+.artisteMore .fa-caret-down {
   color: #eeedf3;
-  margin: 0  auto;
+  margin: 0 auto;
   width: 100%;
   height: 100px;
   text-align: center;
@@ -1029,25 +1033,25 @@ iframe {
   z-index: 10000;
 }
 
-.artisteMore .col-md-4{
+.artisteMore .col-md-4 {
   transition: all 0.5s linear;
   position: relative;
   height: 45px;
 }
 
-.artisteMore .col-md-4 .col-md-8{
+.artisteMore .col-md-4 .col-md-8 {
   transition: all 0.5s linear;
 }
 
-.artisteMore img{
+.artisteMore img {
   width: 90%;
 }
 
-.artisteMore .col-md-6{
+.artisteMore .col-md-6 {
   height: 40px;
 }
 
-.artisteMore h2{
+.artisteMore h2 {
   color: #F0F0F0;
   font-family: "Bebas Neue", sans-serif;
   margin: 0;
@@ -1055,11 +1059,11 @@ iframe {
   font-size: 34px;
 }
 
-.artisteMore .row{
+.artisteMore .row {
   margin: 0;
 }
 
-.artisteMore a{
+.artisteMore a {
   line-height: 34px;
   font-size: 22px;
   margin: auto 10px;
@@ -1073,7 +1077,7 @@ iframe {
   transition: all 0.3s linear;
 }
 
-.artisteMore a:nth-child(1){
+.artisteMore a:nth-child(1) {
   font-size: 14px;
   text-transform: uppercase;
   font-family: "raleway", sans-serif;
@@ -1084,17 +1088,17 @@ iframe {
   transition: all 0.3s linear;
 }
 
-.artisteMore a:hover{
+.artisteMore a:hover {
   background: #1D1D1D;
   color: #F0F0F0;
 }
 
-.artisteMore a:nth-child(1):hover{
+.artisteMore a:nth-child(1):hover {
   background: #F0F0F0;
   color: #1D1D1D;
 }
 
-.artisteMore p.col-md-12{
+.artisteMore p.col-md-12 {
   text-align: left;
   padding: 0;
   margin: 0;
@@ -1102,26 +1106,27 @@ iframe {
   margin-bottom: 30px;
 }
 
-.artisteMore p{
+.artisteMore p {
   color: #F0F0F0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-align: justify;
 }
 
-.artisteMore p+p{
+.artisteMore p+p {
   margin-bottom: 30px;
 }
 
-.artisteMore iframe{
+.artisteMore iframe {
   margin: 0;
   width: 100%;
 }
 
-.artisteMore p + .col-md-12{
+.artisteMore p + .col-md-12 {
   margin: 0;
   padding: 0;
 }
+
 
 /***********************************************************************************************
 
@@ -1311,10 +1316,12 @@ iframe {
   display: inline-block;
   margin: 0 1%;
 }
-#aVenir .lineUp{
+
+#aVenir .lineUp {
   width: 36.5%;
   height: 20px;
 }
+
 #aVenir .lieu {
   width: 20%;
 }
@@ -1349,12 +1356,10 @@ A PROPOS
   background: #eeedf3;
 }
 
-
 #bodyAbout #header {
   background: #1D1D1D;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-
 
 #videoPres {
   height: 500px;
@@ -1386,7 +1391,7 @@ video {
   font-size: 18px;
 }
 
-#story .title{
+#story .title {
   margin: 0;
   background: #FFF;
 }
@@ -1438,45 +1443,46 @@ video {
   font-family: 'Raleway', sans-serif;
 }
 
-#members .artisteContainer{
+#members .artisteContainer {
   overflow: hidden;
 }
 
-#members .artisteContainer .artisteDescribe{
+#members .artisteContainer .artisteDescribe {
   transition: all 0.3s linear;
   background: #FFF;
 }
 
-#members .artisteContainer:hover .artisteDescribe{
+#members .artisteContainer:hover .artisteDescribe {
   transform: translateY(-130px);
 }
 
-#members .artisteContainer .artistesTransition{
+#members .artisteContainer .artistesTransition {
   transition: all 0.3s linear;
 }
 
-#members .artisteContainer:hover .artistesTransition{
+#members .artisteContainer:hover .artistesTransition {
   transform: translateY(-130px) skewY(8deg) scaleX(1.3);
 }
 
-.memberDescribe{
+.memberDescribe {
   margin-top: 95px;
   width: 100%;
   background: #FFF;
   text-align: center;
-  margin:  inherit auto;
+  margin: inherit auto;
 }
 
-@keyframes growth{
-  0%{
+@keyframes growth {
+  0% {
     width: 0;
     margin: auto;
   }
-  100%{
+  100% {
     width: 150px;
     margin: auto;
   }
 }
+
 
 /***********************************************************************************************
 
@@ -1493,7 +1499,7 @@ video {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-#contactus{
+#contactus {
   margin-top: 100px;
 }
 
@@ -1506,7 +1512,7 @@ video {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  margin-top:50px;
+  margin-top: 50px;
   margin-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
@@ -1700,9 +1706,13 @@ video {
   font-size: 30px;
 }
 
-#contactImg{
+#contactImg {
   margin-top: 50px;
   margin-bottom: 50px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -1713,28 +1723,31 @@ CONNEXION
 
 /*******************************************************************************************************/
 
-
-body#bodyConnexion, body#bodyConnect{
+body#bodyConnexion,
+body#bodyConnect {
   background: linear-gradient(to top left, #19AAB8, #73C8A9) no-repeat 100% 100%;
   overflow: hidden;
 }
 
-#bodyConnexion form, #bodyConnect > div{
+#bodyConnexion form,
+#bodyConnect > div {
   width: 400px;
   height: 400px;
   background: #EFEFF2;
   margin: auto;
   margin-top: 15%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
 }
 
-#bodyConnexion form > div, #bodyConnect > div > div{
+#bodyConnexion form > div,
+#bodyConnect > div > div {
   background: #1D1D1D;
 }
 
-#bodyConnexion form h2, #bodyConnect div h2{
+#bodyConnexion form h2,
+#bodyConnect div h2 {
   width: 100%;
   height: 70px;
   background: #1D1D1D;
@@ -1750,7 +1763,8 @@ body#bodyConnexion, body#bodyConnect{
   margin: 0;
 }
 
-#bodyConnexion form h3, #bodyConnect div h3{
+#bodyConnexion form h3,
+#bodyConnect div h3 {
   width: 100%;
   height: 40px;
   background: #1D1D1D;
@@ -1766,12 +1780,13 @@ body#bodyConnexion, body#bodyConnect{
   margin: 0;
 }
 
-#bodyConnexion form div + input[type=text]{
+#bodyConnexion form div + input[type=text] {
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
-#bodyConnexion form input[type=text], #bodyConnexion form input[type=password]{
+#bodyConnexion form input[type=text],
+#bodyConnexion form input[type=password] {
   width: 80%;
   height: 40px;
   padding: 5px;
@@ -1779,21 +1794,21 @@ body#bodyConnexion, body#bodyConnect{
   margin: auto;
   outline: none;
   border-radius: 3px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#bodyConnexion form p{
+#bodyConnexion form p {
   width: 80%;
   margin: auto;
   font-family: "Raleway", sans-serif;
 }
 
-#bodyConnexion form p label{
+#bodyConnexion form p label {
   margin-left: 10px;
-  color: rgba(0,0,0,0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
-#bodyConnexion form button{
+#bodyConnexion form button {
   margin: auto;
   width: 50%;
   height: 60px;
@@ -1808,13 +1823,14 @@ body#bodyConnexion, body#bodyConnect{
   transition: all 0.2s linear;
 }
 
-#bodyConnexion form button:hover{
+#bodyConnexion form button:hover {
   color: #1D1D1D;
   background: #F0F0F0;
   border: 1px solid #1D1D1D;
 }
 
-#bodyConnect #error, #success{
+#bodyConnect #error,
+#success {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -1827,12 +1843,12 @@ body#bodyConnexion, body#bodyConnect{
   margin-top: 20px;
 }
 
-#bodyConnect #success{
+#bodyConnect #success {
   background: rgba(38, 166, 91, 0.4);
   border: 2px solid rgba(38, 166, 91, 0.2);
 }
 
-#bodyConnect  a{
+#bodyConnect a {
   display: block;
   width: 40%;
   text-align: center;
@@ -1848,14 +1864,14 @@ body#bodyConnexion, body#bodyConnect{
   transition: all 0.2s linear;
 }
 
-#bodyConnect p + form button:hover{
+#bodyConnect p + form button:hover {
   background: #F0F0F0;
   color: #1D1D1D;
   border: 1px solid #1D1D1D;
   transition: all 0.2s linear;
 }
 
-#bodyConnect button{
+#bodyConnect button {
   width: 50%;
   display: block;
   margin: 40px auto;
@@ -1867,7 +1883,8 @@ body#bodyConnexion, body#bodyConnect{
   font-family: "Raleway", sans-serif;
 }
 
-#bodyConnect form + form button, #decoForm button {
+#bodyConnect form + form button,
+#decoForm button {
   background: rgba(239, 72, 54, 0.4);
   border: 2px solid rgba(239, 72, 54, 0.2);
   height: 40px;
@@ -1878,14 +1895,14 @@ body#bodyConnexion, body#bodyConnect{
   line-height: 20px;
 }
 
-#bodyConnect  a div{
+#bodyConnect a div {
   width: 80px;
   display: inline-block;
   text-align: center;
   margin: auto;
 }
 
-#bodyConnect  a i{
+#bodyConnect a i {
   left: 10px;
   width: 10px;
   font-size: 20px;
@@ -1894,11 +1911,12 @@ body#bodyConnexion, body#bodyConnect{
   font-weight: bolder;
 }
 
-#bodyConnect  a:hover{
+#bodyConnect a:hover {
   background: #F0F0F0;
   border: 1px solid #1D1D1D;
   color: #1D1D1D;
 }
+
 
 /********************************************************************************************************
 
@@ -1907,88 +1925,91 @@ PAGE MODIFICATION
 
 /*******************************************************************************************************/
 
-#bodyModif, #bodyModifSuccess{
-  background: #EFEFF2 ;
+#bodyModif,
+#bodyModifSuccess {
+  background: #EFEFF2;
   font-family: "Raleway", sans-serif;
 }
 
-#bodyModif .title, #bodyModifSuccess .title{
+#bodyModif .title,
+#bodyModifSuccess .title {
   margin: 0;
   background: #1D1D1D;
   color: #EFEFF2;
 }
 
-#bodyModif label{
+#bodyModif label {
   width: 10%;
 }
 
-#bodyModif input{
+#bodyModif input {
   padding: 5px;
   outline: none;
   margin: 0 5px;
   border-radius: 3px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 20%;
   display: inline-block;
 }
 
-#bodyModif textarea{
+#bodyModif textarea {
   padding: 5px;
   outline: none;
   margin: 0 5px;
   border-radius: 3px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 20%;
   display: inline-block;
   resize: none;
   overflow: hidden;
 }
 
-#bodyModif label#Description{
+#bodyModif label#Description {
   transform: translateY(-70px);
 }
 
-#bodyModif .EventModif input{
+#bodyModif .EventModif input {
   width: 16.5%;
 }
 
-#bodyModif h2, bodyModifSuccess h2{
+#bodyModif h2,
+bodyModifSuccess h2 {
   font-family: "Bebas neue", sans-serif;
   font-size: 40px;
   width: 30%;
   display: inline-block;
 }
 
-#bodyModif h2 + div{
+#bodyModif h2 + div {
   height: 5px;
   width: 69%;
   background: #1D1D1D;
   display: inline-block;
 }
 
-#bodyModif form + h2{
+#bodyModif form + h2 {
   width: 10%;
 }
 
-#bodyModif form + h2 + div{
+#bodyModif form + h2 + div {
   width: 89%;
 }
 
-#bodyModif a + form + h2{
+#bodyModif a + form + h2 {
   width: 18%;
 }
 
-#bodyModif a + form + h2 + div{
+#bodyModif a + form + h2 + div {
   width: 81%;
 }
 
-#bodyModif a + p{
+#bodyModif a + p {
   display: inline-block;
   width: 10%;
   text-align: center;
 }
 
-#bodyModif a{
+#bodyModif a {
   color: #EFEFF2;
   display: inline-block;
   font-weight: bolder;
@@ -2003,7 +2024,7 @@ PAGE MODIFICATION
   font-family: "Helvetica", sans-serif;
 }
 
-#bodyModif #submitForm button{
+#bodyModif #submitForm button {
   width: 20%;
   height: 40px;
   margin: 50px auto;
@@ -2015,23 +2036,24 @@ PAGE MODIFICATION
   transition: all 0.1s linear;
 }
 
-#bodyModif #submitForm input[type=text]{
+#bodyModif #submitForm input[type=text] {
   display: none;
 }
 
-#bodyModif #submitForm button:hover{
+#bodyModif #submitForm button:hover {
   background: #EFEFF2;
   color: #1D1D1D;
   border: 1px solid #1D1D1D;
 }
 
-#bodyModif #decoForm button, #bodyModifSuccess #decoForm button{
+#bodyModif #decoForm button,
+#bodyModifSuccess #decoForm button {
   position: fixed;
   right: 20px;
   top: 30px;
 }
 
-#bodyModifSuccess h2{
+#bodyModifSuccess h2 {
   width: 100%;
   text-align: center;
   font-family: "Bebas neue", sans-serif;
@@ -2039,7 +2061,7 @@ PAGE MODIFICATION
   margin-top: 200px;
 }
 
-#bodyModifSuccess #backModif button{
+#bodyModifSuccess #backModif button {
   height: 60px;
   width: 30%;
   background: #1D1D1D;
@@ -2051,22 +2073,12 @@ PAGE MODIFICATION
   transition: all 0.1s linear;
 }
 
-#bodyModifSuccess #backModif button:hover{
+#bodyModifSuccess #backModif button:hover {
   background: #F0F0F0;
   color: #1D1D1D;
 }
 
-#bodyModifSuccess #backModif button i{
-  margin-right:20px;
+#bodyModifSuccess #backModif button i {
+  margin-right: 20px;
   font-weight: bolder;
 }
-
-
-
-
-
-
-
-
-
-
