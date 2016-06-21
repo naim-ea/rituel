@@ -80,7 +80,7 @@ $(document).ready(function () {
   };
 
   for(i = 1; i <= Object.keys(eventList).length; i++){
-    $("#aVenir ul").append('<li><h4>' + eventList["event_"+i]["nom"] + '</h4><p class="lineUp">' + eventList["event_"+i]["smallLineUp"] + '...</p><p class="lieu">' + eventList["event_"+i]["lieu"] + '</p><p class="date">' + eventList["event_"+i]["date"] + '</p><a href="#" title="event Facebook" class="lien">facebook</a></li>');
+    $("#aVenir ul").append('<li><h4>' + eventList["event_"+i]["nom"] + '</h4><p class="lineUp">' + eventList["event_"+i]["smallLineUp"] + '...</p><p class="lieu">' + eventList["event_"+i]["lieu"] + '</p><p class="date">' + eventList["event_"+i]["date"] + '</p><a href="'+ eventList["event_"+i]["lienFB"] +'" title="event Facebook" class="lien">facebook</a></li>');
   };
 
 
