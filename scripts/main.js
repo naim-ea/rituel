@@ -176,10 +176,13 @@ $(document).ready(function () {
     var moreImg = $(this).children('.artistesImgContainer').children('img').attr('src');
     var moreDescribe = $(this).children('.artisteDescribe').children('.pDescribe').html();
     console.log(moreDescribe);
+    var moreLienFacebook = $(this).children('.artisteDescribe').children('.lienFacebook').attr('href');
+    var moreLienSoundcloud = $(this).children('.artisteDescribe').children('.lienSoundcloud').attr('href');
     $('.moreName').html(moreName);
     $('.moreImg').attr('src', moreImg);
     $('.moreDescribe').html(moreDescribe);
-    
+    $('.lienF').attr('href', moreLienFacebook);
+    $('.lienS').attr('href', moreLienSoundcloud);
 
   });
 
