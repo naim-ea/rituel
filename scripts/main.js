@@ -178,12 +178,14 @@ $(document).ready(function () {
     console.log(moreDescribe);
     var moreLienFacebook = $(this).children('.artisteDescribe').children('.lienFacebook').attr('href');
     var moreLienSoundcloud = $(this).children('.artisteDescribe').children('.lienSoundcloud').attr('href');
+    var soundCloud = $(this).data('iframe');
     $('.moreName').html(moreName);
     $('.moreImg').attr('src', moreImg);
     $('.moreDescribe').html(moreDescribe);
     $('.lienF').attr('href', moreLienFacebook);
     $('.lienS').attr('href', moreLienSoundcloud);
-
+    
+    $('#soundcloud_widget').src('http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/'+soundCloud+'&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d')
   });
 
   // ARTISTE HOVER HOME SECTION
@@ -214,10 +216,23 @@ $(document).ready(function () {
     }, 'slow');
     return false;
   });
-
-
-
-
+  
+  $('.firstDescribeNextDescribe').hide();
+  $('.firstDescribeNextDescribe').html(nextEvent["description"]);
+  
+  var showMore = false;
+  
+  $('#event_more').on('click', function(e){
+    e.preventDefault();
+    $('.firstDescribeNextDescribe').slideToggle();
+    showMore = !showMore;
+    if(showMore){
+     $('#event_more').html('voir moins'); 
+    }
+    else{
+      $('#event_more').html('voir plus'); 
+    }
+  })
 
 });
 
