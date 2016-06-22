@@ -66,8 +66,26 @@ $(document).ready(function () {
 
   //CHANGER LE DESTINATAIRE DE L'EMAIL
   $(".custom-options").on("click", function () {
-    if ($(".custom-select-trigger").html() == ("Birds of Mind")) {
+    if ($(".custom-select-trigger").html() == ("Rituel")) {
+      $("select").attr("value", "0");
+    }
+    else if ($(".custom-select-trigger").html() == ("Birds of Mind")) {
       $("select").attr("value", "1");
+    }
+    else if ($(".custom-select-trigger").html() == ("Silens")) {
+      $("select").attr("value", "2");
+    }
+    else if ($(".custom-select-trigger").html() == ("Nato and Sahale")) {
+      $("select").attr("value", "3");
+    }
+    else if ($(".custom-select-trigger").html() == ("Victor Norman")) {
+      $("select").attr("value", "4");
+    }
+    else if ($(".custom-select-trigger").html() == ("David Mears")) {
+      $("select").attr("value", "5");
+    }
+    else if ($(".custom-select-trigger").html() == ("Samarcande ")) {
+      $("select").attr("value", "6");
     }
   })
 
