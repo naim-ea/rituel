@@ -4,7 +4,7 @@
 /***********************************************************************************************
 
 
-                                  GÉNÉRAL
+GÉNÉRAL
 
 ***********************************************************************************************/
 
@@ -696,7 +696,45 @@ a:hover {
     width: 80%;
     margin: 30% 10%;
   }
-  .artisteHome {}
+  .artisteMore{
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    z-index: 2000;
+    overflow: scroll;
+  }
+  .artisteClose{
+    display: block !important;
+    position: fixed;
+    z-index: 3000;
+    color: #F0F0F0;
+    right: 5px;
+    top: 5px;
+    font-size: 60px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .moreImg{
+    width: 80% !important;
+    margin: 0 10%;
+    text-align: center;
+  }
+  .moreName{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 !important;
+  }
+  .moreLink{
+    margin: 10px auto !important;
+  }
+  .moreLink + .col-md-12{
+    margin: 50px auto;
+  }
 }
 
 
@@ -849,7 +887,7 @@ a:hover {
 
 /***********************************************************************************************
 
-                                        ARTISTES
+ARTISTES
 
 ***********************************************************************************************/
 
@@ -1001,6 +1039,10 @@ iframe {
   padding: 0;
 }
 
+.artisteClose{
+    display: none;
+  }
+
 .artisteMore .fa-caret-down {
   color: #eeedf3;
   margin: 0 auto;
@@ -1114,7 +1156,7 @@ iframe {
 
 /***********************************************************************************************
 
-                                        EVENEMENTS
+EVENEMENTS
 
 ***********************************************************************************************/
 
@@ -1470,12 +1512,12 @@ video {
 }
 
 @media only screen 
-and (min-device-width : 375px) 
+  and (min-device-width : 375px) 
   and (max-device-width : 667px) {
     #members {
       height: 900px;
     }
-    
+
     #story p{
       font-size: 14px;
       margin-top: 0;
@@ -1484,7 +1526,7 @@ and (min-device-width : 375px)
 
 /***********************************************************************************************
 
-                                      CONTACT
+CONTACT
 
 **********************************************************************************************/
 

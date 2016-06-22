@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  
+
   //HEADER MENU
   $('#headerMobile').hide();
   $('.icon').on('click', function () {
@@ -89,8 +89,8 @@ $(document).ready(function () {
   $('.More2').hide();
   var currentArtiste = 0;
   var targetArtiste = 0;
-
-  $('.artisteContainer').on('click', function(){
+  
+  $('.artisteContainer, .artisteClose').on('click', function(){
 
     if($(this).hasClass('col1')){
       $('.More1 .col-md-4').removeClass('col-md-offset-4');
@@ -175,7 +175,6 @@ $(document).ready(function () {
     var moreName = $(this).children('.artisteDescribe').children('h3').html();
     var moreImg = $(this).children('.artistesImgContainer').children('img').attr('src');
     var moreDescribe = $(this).children('.artisteDescribe').children('.pDescribe').html();
-    console.log(moreDescribe);
     var moreLienFacebook = $(this).children('.artisteDescribe').children('.lienFacebook').attr('href');
     var moreLienSoundcloud = $(this).children('.artisteDescribe').children('.lienSoundcloud').attr('href');
     var soundCloud = $(this).data('iframe');
@@ -184,8 +183,15 @@ $(document).ready(function () {
     $('.moreDescribe').html(moreDescribe);
     $('.lienF').attr('href', moreLienFacebook);
     $('.lienS').attr('href', moreLienSoundcloud);
-    
-    $('#soundcloud_widget').src('http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/'+soundCloud+'&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d')
+
+    if($(this).data('scroll') == "#More2"){
+      $('#soundcloud_widget_2').replaceWith('<iframe id="soundcloud_widget_2" src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/'+soundCloud+'&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d" width="100%" height="110" frameborder="no"></iframe>');
+      console.log('2');
+    }
+    if($(this).data('scroll') == "#More1"){
+      $('#soundcloud_widget').replaceWith('<iframe id="soundcloud_widget" src="http://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/'+soundCloud+'&show_artwork=false&liking=false&sharing=false&auto_play=false&color=1d1d1d" width="100%" height="110" frameborder="no"></iframe>');
+      console.log('1');
+    }
   });
 
   // ARTISTE HOVER HOME SECTION
@@ -209,25 +215,24 @@ $(document).ready(function () {
   // SMOOTH SCROLL
   $('div[data-scroll^="#"]').click(function(){
     var the_id = $(this).data("scroll");
-    console.log(the_id);
 
     $('html, body').animate({
       scrollTop:$(the_id).offset().top-400
     }, 'slow');
     return false;
   });
-  
+
   $('.firstDescribeNextDescribe').hide();
   $('.firstDescribeNextDescribe').html(nextEvent["description"]);
-  
+
   var showMore = false;
-  
+
   $('#event_more').on('click', function(e){
     e.preventDefault();
     $('.firstDescribeNextDescribe').slideToggle();
     showMore = !showMore;
     if(showMore){
-     $('#event_more').html('voir moins'); 
+      $('#event_more').html('voir moins'); 
     }
     else{
       $('#event_more').html('voir plus'); 
