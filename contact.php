@@ -123,6 +123,7 @@ session_start();?>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/hamburgler.js"></script>
     <script src="scripts/parallax.min.js"></script>
+    <script src="data/data.json"></script>
     <script src="scripts/main.js"></script>
   </body>
 
