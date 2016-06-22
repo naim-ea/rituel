@@ -630,9 +630,9 @@ a:hover {
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
   #entete {
-    height: 400px;
+    height: 500px;
   }
   #entete h2 {
     font-size: 150px;
@@ -646,10 +646,10 @@ a:hover {
     margin-top: 50px;
   }
   #nextEvent {
-    height: 1100px;
+    height: 800px;
   }
   .nextEventBackground {
-    height: 1100px;
+    height: 850px;
   }
   #nextEvent .transition {
     margin-top: -50px;
@@ -669,7 +669,7 @@ a:hover {
     font-size: 40px;
   }
   #nextEvent .lineUp {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   #nextEvent .lineUp h3 {
     padding-top: 15px;
@@ -693,54 +693,17 @@ a:hover {
     font-size: 18px;
   }
   #artisteHome h3 {
-    width: 80%;
-    margin: 30% 10%;
+    margin-top: 200px;
   }
-  .artisteMore{
-    position: fixed;
-    width: 100% !important;
-    height: 100% !important;
-    top: 0;
-    z-index: 2000;
-    overflow: scroll;
-  }
-  .artisteClose{
-    display: block !important;
-    position: fixed;
-    z-index: 3000;
-    color: #F0F0F0;
-    right: 5px;
-    top: 5px;
-    font-size: 60px;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    height: 40px;
-    transform: rotate(45deg);
-    cursor: pointer;
-  }
-  .moreImg{
-    width: 80% !important;
-    margin: 0 10%;
-    text-align: center;
-  }
-  .moreName{
-    width: 100%;
-    text-align: center;
-    margin: 20px 0 !important;
-  }
-  .moreLink{
-    margin: 10px auto !important;
-  }
-  .moreLink + .col-md-12{
-    margin: 50px auto;
+  #artisteHome {
+    margin-bottom: -140px;
   }
 }
 
 
-/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:377px) and (max-width: 769px) {
   #entete {
     height: 400px;
   }
@@ -750,10 +713,12 @@ a:hover {
     padding-top: 100px;
   }
   #entete p {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   #nextEvent {
     height: 1100px;
+    margin-top: -50px;
+    overflow: hidden;
   }
   .nextEventBackground {
     height: 1100px;
@@ -773,6 +738,10 @@ a:hover {
   }
   #nextEvent .describe .col-md-8 h4 {
     font-size: 30px;
+  }
+  #nextEvent .lineUp {
+    margin-top: 450px;
+    height: 600px;
   }
   #nextEvent .lineUp h3 {
     padding-top: 15px;
@@ -785,104 +754,67 @@ a:hover {
     padding-top: 35px;
   }
   #artisteHome {
-    height: 490px;
+    height: 600px;
+    z-index: 5;
   }
-  #artisteHome .transition {
-    margin-top: -30px;
-    transform: translateY(-20px) skewY(2deg);
+  #divArtistButton{
+    height: 500px;
   }
-  #artisteHome .transition p {
-    padding-top: 35px;
+  #artisteButton h3 {
+    margin-top: 200px;
   }
   #artisteHome img {
-    width: 50%;
-  }
-  #artisteHome img:first-child,
-  #artisteHome img:last-child {
-    display: none;
-  }
-  #artisteButton {
-    margin-top: 10px;
-  }
-  #artisteHome h3 {
-    width: 80%;
-    margin: 30% 8%;
-  }
-  #owerflowHidden {
-    height: 400px;
-    width: 100%;
-    padding: 0;
-    margin-top: -30px;
-    ;
-  }
-  #header h1 {
-    width: 90%;
-  }
-}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 480px) {
-  #entete {
-    height: 400px;
-  }
-  #entete h2 {
-    font-size: 75px;
-    margin-top: 0;
-    padding-top: 100px;
-  }
-  #entete p {
-    margin-top: 50px;
-  }
-  #nextEvent {
-    height: 1100px;
-  }
-  .nextEventBackground {
-    height: 1100px;
-  }
-  #nextEvent .transition {
-    margin-top: -50px;
-  }
-  #nextEvent .transition h2 {
-    height: 100px;
-    line-height: 100px;
-  }
-  #nextEvent .describe h3 {
-    font-size: 100px;
-  }
-  #nextEvent .describe .col-md-8:last-child {
-    margin-top: 300px;
-  }
-  #nextEvent .describe .col-md-8 h4 {
-    font-size: 30px;
-  }
-  #nextEvent .lineUp h3 {
-    padding-top: 15px;
-  }
-  #nextEvent .lineUp ul li {
-    height: 70px;
-    line-height: 70px;
-  }
-  #nextEvent .lineUp p {
-    padding-top: 35px;
-  }
-  #artiste {
-    margin-top: 100px;
-  }
-  #artiste .transition {
-    margin-top: -130px;
-    transform: translateY(-20px) skewY(2deg);
-  }
-  #artiste .transition p {
-    padding-top: 20px;
+    margin-top: 80px;
   }
 }
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 376px) {
+  #entete {
+    height: 600px;
+  }
+  #entete h2{
+    font-size: 100px;
+  }
+  #entete p{
+    margin-top: -10px;
+  }
+  #nextEvent {
+    margin-top: -50px;
+    height: 830px;
+  }
+  #nextEvent .describe h3{
+    font-size: 90px;
+  }
+  #nextEvent .describe .col-md-8:last-child{
+    margin-top: 400px;
+  }
+  #nextEvent .lineUp {
+    margin-top: 80px;
+    padding-top: 5px;
+    height: 700px;
+  }
+  #artisteHome {
+    margin-top: 680px;
+    height: 380px;
+  }
+  #artisteHome .transition p {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #artisteHome .barre {
+    margin-top: 30px;
+  }
+  .artistesImg {
+    margin-top: 75px;
+    height: 300px;
+  }
+  #artisteHome #artisteButton {
+    margin-top: -80px;
+  }
+}
 
 
 /***********************************************************************************************
@@ -1156,7 +1088,7 @@ iframe {
 
 /***********************************************************************************************
 
-EVENEMENTS
+                                        EVENEMENTS
 
 ***********************************************************************************************/
 
@@ -1261,7 +1193,7 @@ EVENEMENTS
 
 .firstDescribeNext {
   background: #fff;
-  filter: drop-shadow( 0 0 5px rgba(0,0,0,0.1));
+  filter: drop-shadow( 0 0 5px rgba(0, 0, 0, 0.1));
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -1371,6 +1303,95 @@ EVENEMENTS
   margin-top: 50px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .firstDescribe {
+    width: 100%;
+    height: 310px;
+  }
+  #backgroundEvent {
+    height: 310px;
+  }
+  .firstDescribeNext {
+    width: 100%;
+    margin-top: -150px;
+  }
+  #event_more {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .FirstEvent {
+    margin-top: 0px;
+    width: 105%;
+  }
+  .firstDescribe {
+    margin-top: -70px;
+    height: 400px;
+  }
+  .firstDescribe h2 {
+    margin-bottom: 50px;
+  }
+  .firstDescribeNext {
+    width: 105%;
+    margin-top: -50px;
+  }
+  #event_more {
+    width: 30%;
+  }
+  #backgroundEvent {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .FirstEvent {
+    margin-top: 0px;
+    width: 105%;
+  }
+  #backgroundEvent {
+    height: 300px;
+    margin-top: 60px;
+  }
+  .firstDescribe {
+    margin-top: 55px;
+    padding-top: 5px;
+    height: 300px;
+    z-index: 50;
+  }
+  .firstDescribe h2 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .firstDescribeNext {
+    width: 105%;
+    margin-top: -100px;
+  }
+  #event_more {
+    width: 40%;
+  }
+  #aVenir ul li {
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+  }
+  #aVenir ul li h4 {
+    font-size: 20px;
+  }
+  #aVenir ul li h4,
+  #aVenir ul li p.lineUp {
+    width: 100%;
+  }
+  #aVenir ul li p.lieu,
+  #aVenir ul li p.date {
+    width: 40%;
+  }
+  #aVenir ul li a.lien {
+    margin-top: 5px;
+    width: 40%;
+  }
+}
 
 /********************************************************************************************************
 
