@@ -1153,7 +1153,7 @@ iframe {
 }
 
 .firstDescribe {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   height: 450px;
 }
 
@@ -1341,6 +1341,12 @@ iframe {
   }
   #backgroundEvent {
     height: 400px;
+  }
+  .firstDescribe {
+  background: #1D1D1D;
+  }
+  #EventImg img {
+    display: none;
   }
 }
 
