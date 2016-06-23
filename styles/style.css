@@ -1318,6 +1318,45 @@ iframe {
   #event_more {
     width: 20%;
   }
+  .artisteMore{
+    position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    z-index: 2000;
+    overflow: scroll;
+  }
+  .artisteClose{
+    display: block !important;
+    position: fixed;
+    z-index: 3000;
+    color: #F0F0F0;
+    right: 5px;
+    top: 5px;
+    font-size: 60px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  .moreImg{
+    width: 80% !important;
+    margin: 0 10%;
+    text-align: center;
+  }
+  .moreName{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 !important;
+  }
+  .moreLink{
+    margin: 10px auto !important;
+  }
+  .moreLink + .col-md-12{
+    margin: 50px auto;
+  }
 }
 
 @media only screen and (max-width: 769px) {
